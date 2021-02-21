@@ -1,0 +1,8 @@
+.deploy*/
+node_modules/
+public/
+db.json
+yarn.lock
+*.log
+.DS_Store
+Thumbs.db
