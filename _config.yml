@@ -111,3 +111,9 @@ deploy:
   type: git
   repo: https://github.com/kinglyq/kinglyq.github.io.git
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
