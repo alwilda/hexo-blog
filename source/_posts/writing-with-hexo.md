@@ -104,10 +104,32 @@ console.log(map1);
 ``` [language] [title] [url] [link text] code snippet ```
 ````
 
-# Link
+## Link
 
 在文章中插入链接，并自动给外部链接添加 `target="_blank"` 属性。
 
 ```
 {% link text url [external] [title] %}
 ```
+
+# 资源的引用
+
+> 资源（Asset）代表 `source` 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的 Hexo 项目中只有少量图片，那最简单的方法就是将它们放在 `source/images` 文件夹中。然后通过类似于 `![](/images/image.jpg)` 的方法访问它们。
+
+将 `config.yml` 文件中的 `post_asset_folder` 选项设为 `true` 来打开，这样 Hexo 将会在你每一次通过` hexo new [layout] <title>` 命令创建新文章时自动创建一个与文章同名的文件夹，当然也可以手动创建。
+
+{% codeblock _config.yml lang:yml %}
+post_asset_folder: true
+{% endcodeblock %}
+
+通过常规的 `markdown` 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。使用以下 `Hexo` 标签来加载资源：
+
+```
+{% asset_path slug %}
+{% asset_img slug [title] %}
+{% asset_link slug [title] %}
+```
+
+例如：`{% asset_img Pikachu.jpg Pikachu %}`
+
+{% asset_img Pikachu.jpg Pikachu %}
