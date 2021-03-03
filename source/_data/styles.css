@@ -1,0 +1,6 @@
+@media (min-width: 1200px) {
+  /* 覆盖原有 1em 的字体大小 */
+  .post-body {
+    font-size: 1em;
+  }
+}
