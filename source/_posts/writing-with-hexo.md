@@ -4,9 +4,13 @@ date: 2021-02-21 21:12:56
 tags:
 ---
 
-# Hexo 标签
+标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。
+
+虽然你可以使用任何格式书写你的文章，但是标签插件永远可用，且语法也都是一致的。
 
 <!-- more -->
+
+# Hexo 标签
 
 {% blockquote Hexo https://hexo.io/zh-cn/docs/tag-plugins %}
 因为使用 Markdown ，所以只列举一些特别的标签
