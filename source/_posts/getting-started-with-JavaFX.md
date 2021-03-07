@@ -39,7 +39,7 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 {% asset_img new-javafx-project.jpg 新建项目时选择JavaFX %}
 
-2. 将 `Java FX` 依赖添加进项目：
+2. 添加 `Java FX` 依赖：
 
 选择 `File` -> `Project Structure` -> `Libraries` -> `+` -> `Java`
 
