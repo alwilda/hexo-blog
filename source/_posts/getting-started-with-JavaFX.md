@@ -2,6 +2,7 @@
 title: Getting Started with JavaFX 11+
 date: 2021-03-05 15:48:56
 tags:
+categories: JavaFX
 ---
 
 JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户界面来创建 Java 应用程序。
