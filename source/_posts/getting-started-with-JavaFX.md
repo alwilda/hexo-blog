@@ -37,7 +37,7 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 1. 新建项目时选择 `Java FX`
 
-{% asset_img new-javafx-project.jpg [新建项目时选择JavaFX] %}
+{% asset_img new-javafx-project.jpg 新建项目时选择JavaFX %}
 
 2. 将 `Java FX` 依赖添加进项目：
 
@@ -45,7 +45,7 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 选择好目录后将其添加进项目。
 
-{% asset_img add-javafx-lib.jpg [添加依赖] %}
+{% asset_img add-javafx-lib.jpg 添加依赖 %}
 
 3. 设置如下 `VM options`
 
@@ -60,15 +60,15 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 - VM options
   点击 `Modify options` 勾选 `Add VM options`
 
-{% asset_img app-vm-opitons.jpg [IDEA-JavaFX-VM-options] %}
+{% asset_img app-vm-opitons.jpg IDEA-JavaFX-VM-options %}
 
 - 在 IDEA 中配置 `PATH_TO_FX`
 
-{% asset_img javafx-path.jpg [在IDEA中配置PATH_TO_FX] %}
+{% asset_img javafx-path.jpg 在IDEA中配置PATH_TO_FX %}
 
 4. 运行 `main` 函数，效果如图
 
-{% asset_img n-run-r.jpg [普通javafx项目效果] %}
+{% asset_img n-run-r.jpg 普通javafx项目效果 %}
 
 # 在 Maven 中使用
 
@@ -89,19 +89,19 @@ mvn archetype:generate \
 
 后续也可将 `archetype` 添加到 `IDEA` 中
 
-{% asset_img idea-javafx-archetype.jpg [javafx-archetype] %}
+{% asset_img idea-javafx-archetype.jpg javafx-archetype %}
 
 2. 项目结构
 
 注意框起来的部分，一定要与本地安装的 `Java` 版本保持一致。
 
-{% asset_img m-j-structure.jpg [项目结构] %}
+{% asset_img m-j-structure.jpg 项目结构 %}
 
 3. 运行结果
 
 运行 `App.java` 的 `main` 函数，效果如图所示：
 
-{% asset_img mvn-javafx-result.jpg [效果] %}
+{% asset_img mvn-javafx-result.jpg 效果 %}
 
 # Scene Builder 的使用
 
