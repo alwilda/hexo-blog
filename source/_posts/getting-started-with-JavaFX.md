@@ -72,7 +72,36 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 # 在 Maven 中使用
 
-正在建设中。。。
+1. 创建项目
+
+使用如下的 `Maven` 命令创建 `Java FX` 项目：
+
+```
+mvn archetype:generate \
+        -DarchetypeGroupId=org.openjfx \
+        -DarchetypeArtifactId=javafx-archetype-simple \
+        -DarchetypeVersion=0.0.3 \
+        -DgroupId=包名 \
+        -DartifactId=项目名 \
+        -Dversion=1.0.0 \
+        -Djavafx-version=本地Java版本，如 11、12、。。。
+```
+
+后续也可将 `archetype` 添加到 `IDEA` 中
+
+{% asset_img idea-javafx-archetype.jpg [javafx-archetype] %}
+
+2. 项目结构
+
+注意框起来的部分，一定要与本地安装的 `Java` 版本保持一致。
+
+{% asset_img m-j-structure.jpg [项目结构] %}
+
+3. 运行结果
+
+运行 `App.java` 的 `main` 函数，效果如图所示：
+
+{% asset_img mvn-javafx-result.jpg [效果] %}
 
 # Scene Builder 的使用
 
