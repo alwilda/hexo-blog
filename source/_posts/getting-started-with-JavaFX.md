@@ -34,7 +34,19 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 # 在 IDEA 中使用
 
-设置如下 `VM options`
+1. 新建项目时选择 `Java FX`
+
+{% asset_img new-javafx-project.jpg [新建项目时选择JavaFX] %}
+
+2. 将 `Java FX` 依赖添加进项目：
+
+选择 `File` -> `Project Structure` -> `Libraries` -> `+` -> `Java`
+
+选择好目录后将其添加进项目。
+
+{% asset_img add-javafx-lib.jpg [添加依赖] %}
+
+3. 设置如下 `VM options`
 
 ```
 --module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml
@@ -47,11 +59,15 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 - VM options
   点击 `Modify options` 勾选 `Add VM options`
 
-{% asset_img app-vm-opitons.jpg [IDEA JavaFX VM options] %}
+{% asset_img app-vm-opitons.jpg [IDEA-JavaFX-VM-options] %}
 
-- 在 IDEA 中配置 PATH_TO_FX
+- 在 IDEA 中配置 `PATH_TO_FX`
 
-{% asset_img javafx-path.jpg [在 IDEA 中配置 PATH_TO_FX] %}
+{% asset_img javafx-path.jpg [在IDEA中配置PATH_TO_FX] %}
+
+4. 运行 `main` 函数，效果如图
+
+{% asset_img n-run-r.jpg [普通javafx项目效果] %}
 
 # 在 Maven 中使用
 
