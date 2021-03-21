@@ -12,17 +12,36 @@ categories:
 <!--more-->
 <br />
 
-*IntelliJ IDEA Version: 2020.3.2*
+_IntelliJ IDEA Version: 2020.3.2_
 
 # 字体
+
 # Maven
+
 # 浏览器
+
 # JavaFX
+
 # 关闭更新
+
 # 自动换行
+
 # 文件编码
+
 # 关闭自动保存
+
 # 代码注释模板
+
+```
+/**
+ * @author <a href="https://github.com/kinglyq" target="_blank">kinglyq<a/>
+ */
+```
+
 # 使用 Prettier
-# 关闭双击shift搜索
+
+# 关闭双击 shift 搜索
+
+按 `Crrl+Shift+A`，输入 `Registry`,找到 `ide.suppress.double.click.handler` 后把 ✔ 打上即可
+
 # 关闭提示区分大小写
