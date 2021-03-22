@@ -1,7 +1,7 @@
 ---
 title: 使用Hexo写作
 date: 2021-02-21 21:12:56
-tags:
+tags: Hexo
 ---
 
 标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。
