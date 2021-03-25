@@ -45,3 +45,5 @@ _IntelliJ IDEA Version: 2020.3.2_
 按 `Crrl+Shift+A`，输入 `Registry`,找到 `ide.suppress.double.click.handler` 后把 ✔ 打上即可
 
 # 关闭提示区分大小写
+
+`Editor` -> `General` -> `Code Completion`
