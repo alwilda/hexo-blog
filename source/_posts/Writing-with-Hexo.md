@@ -13,7 +13,7 @@ tags: Hexo
 # Hexo 标签
 
 {% blockquote Hexo https://hexo.io/zh-cn/docs/tag-plugins %}
-因为使用 Markdown ，所以只列举一些特别的标签
+因为使用 Markdown ，所以只列举一些特别的标签。
 {% endblockquote %}
 
 ## 引用块

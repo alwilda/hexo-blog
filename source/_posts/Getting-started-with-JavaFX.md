@@ -13,8 +13,8 @@ JavaFX 允许您使用高度可移植的，现代化的，硬件加速的用户�
 
 `JavaFX` 建立在 `JDK` 之上，并且是一个独立的组件。有两种不同的选项可用于开发 `JavaFX` 应用程序：
 
-- 使用 `JavaFX SDK`（在 Java 11 LTS 和 15 进行选择）。
-- 使用构建系统（例如 Maven / Gradle）从 Maven Central 下载所需的模块（在上述相同版本之间进行选择）。
+1. 使用 `JavaFX SDK`（在 Java 11 LTS 和 15 进行选择）。
+2. 使用构建系统（例如 Maven / Gradle）从 Maven Central 下载所需的模块（在上述相同版本之间进行选择）。
 
 ## Java
 
