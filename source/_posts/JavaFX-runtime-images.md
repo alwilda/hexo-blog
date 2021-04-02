@@ -17,8 +17,8 @@ JavaFX 项目的 `Runtime images` 是一个自定义 JRE，它仅包含应用程
 
 `javafx-maven-plugin`有两个主要的命令 —— `javafx:run` 和 `javafx:jlink`
 
-1. `javafx:run` 进行编译和运行
-2. `javafx:jlink` 创建自定义运行时
+- `javafx:run` 进行编译和运行
+- `javafx:jlink` 创建自定义运行时
 
 # javafx:run options
 
