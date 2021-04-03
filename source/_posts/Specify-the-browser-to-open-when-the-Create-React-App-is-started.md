@@ -5,6 +5,10 @@ tags:
 categories:
 ---
 
+默认打开自默认浏览器
+
+<!--more-->
+
 ```json
 "start": "set BROWSER=firefox&& react-scripts start"
 ```

@@ -5,4 +5,8 @@ tags: Hexo
 categories:
 ---
 
+修改了文章文件名的大小写后，发现其部署到 `GitHub` 后并没有变化。。。
+
+<!--more-->
+
 删除 `.deploy_git`
