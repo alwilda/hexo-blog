@@ -5,6 +5,10 @@ tags:
 categories:
 ---
 
+`Craco` 的配置示例
+
+<!--more-->
+
 {% blockquote gsoft-inc https://github.com/gsoft-inc/craco#craco CRACO %}
 Create React App Configuration Override is an easy and comprehensible configuration layer for create-react-app.
 
@@ -12,8 +16,6 @@ Get all the benefits of `create-react-app` and customization without using `ejec
 
 All you have to do is create your app using [create-react-app](https://create-react-app.dev/) and customize the configuration with a craco.config.js file.
 {% endblockquote %}
-
-<!--more-->
 
 # 安装
 
