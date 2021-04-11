@@ -53,7 +53,7 @@ response.getBody()；
 使用 [`LinkedMultiValueMap`](https://www.javadoc.io/doc/org.springframework/spring-core/latest/org/springframework/util/LinkedMultiValueMap.html) 构造数据。
 
 ```java
-String url = "http://localhost:6501/api/v1/req-form-urlencoded";
+String url = "xxx";
 
 HttpHeaders headers = new HttpHeaders();
 headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
