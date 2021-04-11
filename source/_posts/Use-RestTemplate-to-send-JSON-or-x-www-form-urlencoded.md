@@ -5,7 +5,23 @@ tags:
 categories:
 ---
 
-无论如何先构造一个 `RestTemplate` 实例：
+二者的区别：
+
+1.  [JSON](https://baike.baidu.com/item/JSON)
+
+    `Content-Type` 被设置为 `application/json`，数据以 `JSON` 格式放在**请求体**中。
+
+<!--more-->
+
+2.  application/x-www-form-urlencoded
+
+    浏览器原生表单默认的编码方式，数据被编码成以 `&` 分隔的键-值对, 同时以 `=` 分隔键和值。 非字母或数字的字符会被 [percent-encoding](https://developer.mozilla.org/zh-CN/docs/Glossary/percent-encoding)：这也就是为什么这种类型不支持二进制数据（应使用 `multipart/form-data` 代替）。
+
+因为数据位置不同，所以后台获取的方式也不同。
+
+---
+
+首先构造一个 `RestTemplate` 实例：
 
 ```java
 private final RestTemplate restTemplate = new RestTemplate();
