@@ -352,7 +352,7 @@ codeblock:
     dark: tomorrow-night
   prism:
     light: prism
-    dark: prism-dark
+    dark: prism-tomorrow
   # Add copy button on codeblock
   copy_button:
     enable: true
