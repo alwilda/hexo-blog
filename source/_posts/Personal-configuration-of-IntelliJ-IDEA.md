@@ -12,8 +12,6 @@ categories:
 <!--more-->
 <br />
 
-_IntelliJ IDEA Version: 2020.3.2_
-
 # 字体
 
 # Maven
@@ -29,6 +27,10 @@ _IntelliJ IDEA Version: 2020.3.2_
 # 文件编码
 
 # 关闭自动保存
+
+{% asset_img auto-save.jpg 关闭自动保存 %}
+
+{% asset_img star-mark.jpg 星号标记 %}
 
 # 代码注释模板
 
