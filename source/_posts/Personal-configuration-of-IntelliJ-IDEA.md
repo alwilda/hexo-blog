@@ -1,7 +1,7 @@
 ---
 title: IntelliJ IDEA 的个人配置
 date: 2021-03-17 21:12:19
-tags:
+tags: IntelliJ IDEA
 categories:
 ---
 
