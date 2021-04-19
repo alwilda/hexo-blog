@@ -44,6 +44,10 @@ categories:
 
 ## 使用 Prettier
 
+1. 安装 [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier/versions) 插件。
+
+2. {% asset_img prettier.jpg Prettier %}
+
 ## 关闭双击 shift 搜索
 
 按 `Crrl+Shift+A`，输入 `Registry`,找到 `ide.suppress.double.click.handler` 后把 ✔ 打上即可
