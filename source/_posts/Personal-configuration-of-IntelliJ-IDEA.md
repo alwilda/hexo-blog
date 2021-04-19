@@ -26,6 +26,10 @@ categories:
 
 ## 自动换行
 
+{% asset_img wrap-1.jpg 自动换行1 %}
+
+{% asset_img wrap-2.jpg 自动换行2 %}
+
 ## 文件编码
 
 ## 关闭自动保存
