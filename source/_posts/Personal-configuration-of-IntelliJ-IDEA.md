@@ -55,3 +55,7 @@ categories:
 ## 关闭提示区分大小写
 
 `Editor` -> `General` -> `Code Completion`
+
+# 插件
+
+1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
