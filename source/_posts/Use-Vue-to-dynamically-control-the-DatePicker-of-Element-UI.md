@@ -45,10 +45,9 @@ export default {
       pickerOptions1: {
         disabledDate: function (now) {
           return now > new Date();
-        },
-      },
-    };
-  },
+        }
+      }
+    }
 };
 ```
 
