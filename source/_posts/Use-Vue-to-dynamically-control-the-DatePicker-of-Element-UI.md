@@ -42,12 +42,12 @@ Picker Options
 ```js
 export default {
   data() {
-      pickerOptions1: {
-        disabledDate: function (now) {
-          return now > new Date();
-        }
+    pickerOptions1: {
+      disabledDate: function (now) {
+        return now > new Date();
       }
     }
+  }
 };
 ```
 
