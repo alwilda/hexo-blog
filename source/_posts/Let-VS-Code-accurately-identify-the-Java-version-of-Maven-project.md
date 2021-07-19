@@ -1,7 +1,7 @@
 ---
 title: 让 VS Code 准确识别 maven 项目的 Java 版本
 date: 2021-07-18 23:12:18
-tags:
+tags: Visual Studio Code
 categories:
 ---
 
