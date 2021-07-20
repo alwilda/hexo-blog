@@ -47,3 +47,5 @@ function useUpdateEffect(effect, deps) {
 1. React Hook useEffect was passed a dependency list that is not an array literal. This means we can't statically verify whether you've passed the correct dependencies. [<em>eslintreact-hooks/exhaustive-deps</em>](https://github.com/facebook/react/issues/14920)
 
 2. React Hook useEffect has a missing dependency: 'effect'. Either include it or remove the dependency array. If 'effect' changes too often, find the parent component that defines it and wrap that definition in useCallback. [<em>eslintreact-hooks/exhaustive-deps</em>](https://github.com/facebook/react/issues/14920)
+
+会有什么问题呢 😶 ❔
