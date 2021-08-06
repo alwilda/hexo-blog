@@ -9,7 +9,7 @@ categories:
 
 <!--more-->
 
-在 `pom.xml` 中通过 [`maven-compiler-plugin`](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html) 插件来配置 `Java` 版本，这样来让 VS Code 正确版本的 `JDK`。
+在 `pom.xml` 中通过 [`maven-compiler-plugin`](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html) 插件配置 `Java` 版本后让 VS Code 使用正确版本的 `JDK`。
 
 
 {% codeblock lang:xml pom.xml %}
