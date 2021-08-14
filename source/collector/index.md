@@ -22,3 +22,9 @@ date: 2021-07-26 10:19:27
 # 编程
 
 - [Refactoring and Design Patterns](https://refactoringguru.cn/design-patterns "免费在线学习代码重构、设计模式、SOLID 原则以及其他和智能编程主题相关的一切内容")
+
+## TypeScript
+
+- [TypeScript 入门教程](http://ts.xcatliu.com/ "TypeScript 入门教程")
+
+- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/ "深入理解 TypeScript")
