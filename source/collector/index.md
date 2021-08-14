@@ -11,7 +11,7 @@ date: 2021-07-26 10:19:27
 
 - [hdqwalls.com Best Source For HD,4k,5k,8k Wallpapers](https://hdqwalls.com/ "Download HD Wallpapers, Desktop Wallpapers, Widescreen Wallpapers In High Quality")
 
-# React
+# React 组件库
 
 - [Semantic UI React](https://react.semantic-ui.com/ "The official Semantic-UI-React integration")
 
