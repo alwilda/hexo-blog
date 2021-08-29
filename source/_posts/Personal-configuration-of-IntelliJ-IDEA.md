@@ -54,7 +54,11 @@ categories:
 
 ## 关闭双击 shift 搜索
 
-按 `Crrl+Shift+A`，输入 `Registry`,找到 `ide.suppress.double.click.handler` 后把 ✔ 打上即可
+~~按 `Crrl+Shift+A`，输入 `Registry`,找到 `ide.suppress.double.click.handler` 后把 ✔ 打上即可~~
+
+在 **2021.2.1** 或之前的几个版本更新后，上面的方法已经不再适用，现在这个设置已经换到了，讷 👇
+
+{% asset_img disable-double.jpg 关闭双击功能 %}
 
 ## 关闭提示区分大小写
 
