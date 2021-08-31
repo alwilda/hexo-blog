@@ -1,5 +1,5 @@
 ---
-title: 如何在 React 中使用 ECharts
+title: 在 React 中使用 ECharts
 date: 2021-08-31 10:50:02
 tags:
 categories:
@@ -17,14 +17,14 @@ var myChart = echarts.init(document.getElementById('main'));
 
 嗯 🙂，直接使用 tsx 和 函数式组件 来写这个例子
 
-```jsx
+```tsx
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 
 let option = {
     ...
 };
-function Chart(props: any) { // 使用 any 不纯粹啊
+function Chart(props: any) {
   let myChart = useRef<echarts.EChartsType | null>(null);
 
   const renderChart = () => {
