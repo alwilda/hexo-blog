@@ -17,7 +17,7 @@ categories:
 
     浏览器原生表单默认的编码方式，数据被编码成以 `&` 分隔的键-值对, 同时以 `=` 分隔键和值。 非字母或数字的字符会被 [percent-encoding](https://developer.mozilla.org/zh-CN/docs/Glossary/percent-encoding)：这也就是为什么这种类型不支持二进制数据（应使用 `multipart/form-data` 代替）。
 
-因为数据位置不同，所以后台获取的方式也不同。
+因为数据格式不同，所以后台获取的方式也不同。
 
 ---
 
