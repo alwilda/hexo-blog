@@ -5,7 +5,9 @@ tags:
 categories:
 ---
 
-删除 DetectionHistory 目录下的所有文件夹和文件
+删除 **DetectionHistory** 目录下的所有文件夹和文件： 👇
+
+<!--more-->
 
 C:\ProgramData\Microsoft\Windows Defender\Scans\History\Service\DetectionHistory
 
