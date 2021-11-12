@@ -1,7 +1,7 @@
 ---
 title: Fetch 无法获取响应头
 date: 2021-09-23 16:36:04
-tags:
+tags: JavaScript
 categories:
 ---
 

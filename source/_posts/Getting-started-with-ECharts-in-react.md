@@ -2,6 +2,8 @@
 title: 在 React 中使用 ECharts
 date: 2021-08-31 10:50:02
 tags:
+  - React
+  - ECharts
 categories:
 ---
 

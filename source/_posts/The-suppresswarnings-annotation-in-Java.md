@@ -1,7 +1,7 @@
 ---
 title: Java @SuppressWarnings
 date: 2021-07-17 13:19:41
-tags:
+tags: Java
 categories:
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: VS Code 导入 Java 项目却一直 Starting Java Language Server...
 date: 2021-08-01 19:31:14
-tags: Visual Studio Code
+tags: 
+  - Visual Studio Code
+  - Java
 categories:
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 获取本机win10的产品密钥
 date: 2021-03-21 09:14:06
-tags: Windows 10
+tags: Windows
 categories:
 ---
 
