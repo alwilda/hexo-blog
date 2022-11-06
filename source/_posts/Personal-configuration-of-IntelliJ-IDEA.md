@@ -64,6 +64,10 @@ categories:
 
 `Editor` -> `General` -> `Code Completion`
 
+## 修改注释的用户名
+
+修改 vmoptions 文件，添加 `-Duser.name=任何名字`，然后重启 IDEA。
+
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
