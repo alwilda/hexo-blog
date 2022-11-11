@@ -5,7 +5,7 @@ tags:
 categories:
 ---
 
-utf-8 编码可能2个字节、3个字节、4个字节的字符，但是 MySQL 的 utf8 编码只支持3字节的数据，而 utf8mb4 编码是 utf8 编码的超集，兼容 utf8，并且能存储4字节的表情字符。 
+utf-8 编码可能 2 个字节、3 个字节、4 个字节的字符，但是 MySQL 的 utf8 编码只支持 3 字节的数据，而 utf8mb4 编码是 utf8 编码的超集，兼容 utf8，并且能存储 4 字节的表情字符。
 
 <!--more-->
 
@@ -24,17 +24,17 @@ SHOW VARIABLES WHERE Variable_name LIKE 'character_set_%' OR Variable_name LIKE 
 修改配置文件，一般名称为 `my.ini`，加入以下配置：
 
 ```
-[client] 
-default-character-set = utf8mb4 
- 
-[mysql] 
-default-character-set = utf8mb4 
- 
-[mysqld] 
-character-set-client-handshake = FALSE 
-character-set-server = utf8mb4 
+[client]
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
+
+[mysqld]
+character-set-client-handshake = FALSE
+character-set-server = utf8mb4
 # ci 是 case insensitive, 即 "大小写不敏感"
-collation-server = utf8mb4_general_ci 
+collation-server = utf8mb4_general_ci
 init_connect='SET NAMES utf8mb4'
 ```
 
