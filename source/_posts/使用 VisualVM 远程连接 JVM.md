@@ -7,6 +7,8 @@ categories:
 
 # 修改 Java 配置
 
+<!--more-->
+
 1. 首先进入 `${JAVA_HOME}/jre/lib/management/` (Java8 之后在 `/conf/management`) 目录。
 
 2. 重命名 *jmxremote.password.template*。
