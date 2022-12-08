@@ -68,6 +68,14 @@ categories:
 
 修改 vmoptions 文件，添加 `-Duser.name=任何名字`，然后重启 IDEA。
 
+## 代码格式化
+
+### 解决 HTML body 下的标签无缩进
+
+设置路径：`Editor` -> `Code Style` -> `HTML`
+
+选择 `Other` 后，编辑 `Do not indent children of`（不缩进子集），然后去掉 *不想无缩进* 的标签就可以了。
+
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
