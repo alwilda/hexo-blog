@@ -76,6 +76,12 @@ categories:
 
 选择 `Other` 后，编辑 `Do not indent children of`（不缩进子集），然后去掉 *不想无缩进* 的标签就可以了。
 
+### SQL 子查询右括号另起一行
+
+设置路径：`Editor` -> `Code Style` -> `SQL` 选择具体的数据库或通用。
+
+选择 `Queries` 下拉找到 `Subquery` -> `Place the closing parenthesis` 修改为 `To begin`。
+
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
