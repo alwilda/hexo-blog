@@ -13,49 +13,49 @@ categories:
 
 2. 在 `C:\Program Files\mysql-8.0.32-winx64` 下创建 `my.ini` 文件，文件内容如下：
 
-    ```
-    [mysql]
+```
+[mysql]
 
-    # 设置 mysql 客户端默认字符集
-    default-character-set=utf8mb4
+# 设置 mysql 客户端默认字符集
+default-character-set=utf8mb4
 
-    [mysqld]
+[mysqld]
 
-    # 设置3306端口
-    port=3306
+# 设置3306端口
+port=3306
 
-    # 设置mysql的安装目录
-    basedir=C:\Program Files\mysql-8.0.32-winx64\
+# 设置mysql的安装目录
+basedir=C:\Program Files\mysql-8.0.32-winx64\
 
-    # 设置mysql数据库的数据的存放目录
-    datadir=C:\Program Files\mysql-8.0.32-winx64\data\
+# 设置mysql数据库的数据的存放目录
+datadir=C:\Program Files\mysql-8.0.32-winx64\data\
 
-    # 允许最大连接数
-    max_connections=200
+# 允许最大连接数
+max_connections=200
 
-    # 允许连接失败的次数，这是为了防止有人从该主机试图攻击数据库系统
-    max_connect_errors=10
+# 允许连接失败的次数，这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
 
-    # 服务端使用的字符集默认为 UTF8
-    character-set-server=utf8mb4
+# 服务端使用的字符集默认为 UTF8
+character-set-server=utf8mb4
 
-    # 创建新表时将使用的默认存储引擎
-    default-storage-engine=INNODB
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
 
-    [client]
+[client]
 
-    # 设置 mysql 客户端连接服务端时默认使用的端口
-    port=3306
+# 设置 mysql 客户端连接服务端时默认使用的端口
+port=3306
 
-    default-character-set=utf8mb4
-    ```
+default-character-set=utf8mb4
+```
 > 注意每一行配置后面不要有空格！
 
 3. 以管理员身份运行 cmd 进入 bin 目录，并执行初始化命令：
 
-    ```
-    mysqld --initialize --console
-    ```
+```
+mysqld --initialize --console
+```
 
 {% asset_img mysql-install-1.png MySQL-安装图例-1 %}
 

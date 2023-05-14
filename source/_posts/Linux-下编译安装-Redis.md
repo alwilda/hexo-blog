@@ -25,6 +25,7 @@ make
 ```
 
 3. 安装
+
 ```shell
 # 安装到 /usr/local/redis 目录
 make install prefix=/usr/local/redis/
