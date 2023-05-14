@@ -68,9 +68,16 @@ categories:
 5. 登录 MySQL 然后修改 root 密码：
     1. 输入命令：`mysql -u root -p`。
     2. 键入刚才红框中的密码，此时登录成功。
-    3. 输入语句 `alter user root@'localhost' identified by '123456'`，123456 即为新的密码。
+    3. 输入语句 `alter user root@'localhost' identified by '123456';`，123456 即为新的密码。
     4. 输入 `exit;` 退出后，再重新登录试下新密码。
 
 6. 将 `C:\Program Files\mysql-8.0.32-winx64\bin` 添加到环境变量 Path 中。
+
+TODO:
+
+```
+set global validate_password.policy=LOW;
+set global validate_password.length=5;
+```
 
 此时，MySQL 安装完成。 👏
