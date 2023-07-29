@@ -82,6 +82,14 @@ categories:
 
 选择 `Queries` 下拉找到 `Subquery` -> `Place the closing parenthesis` 修改为 `To begin`。
 
+### 单行注释挨着代码而不是在行首
+
+设置路径：`Editor` -> `Code Style` -> `Java` -> `Code Generation`
+
+取消勾选 `Line comment at first column`.
+
+{% asset_img line-comment-not-first.png 取消单行注释在行首 %}
+
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
