@@ -62,7 +62,9 @@ categories:
 
 ## 关闭提示区分大小写
 
-`Editor` -> `General` -> `Code Completion`
+`File` | `Settings` | `Edito` | `General` | `Code Completion` 
+
+取消勾选 Match case
 
 ## 修改注释的用户名
 
@@ -72,19 +74,19 @@ categories:
 
 ### 解决 HTML body 下的标签无缩进
 
-设置路径：`Editor` -> `Code Style` -> `HTML`
+设置路径：`File` | `Settings` | `Editor` | `Code Style` | `HTML`
 
 选择 `Other` 后，编辑 `Do not indent children of`（不缩进子集），然后去掉 *不想无缩进* 的标签就可以了。
 
 ### SQL 子查询右括号另起一行
 
-设置路径：`Editor` -> `Code Style` -> `SQL` 选择具体的数据库或通用。
+设置路径：`File` | `Settings` | `Editor` | `Code Style` | `SQL` 选择具体的数据库或通用。
 
 选择 `Queries` 下拉找到 `Subquery` -> `Place the closing parenthesis` 修改为 `To begin`。
 
 ### 单行注释挨着代码而不是在行首
 
-设置路径：`Editor` -> `Code Style` -> `Java` -> `Code Generation`
+设置路径：`File` | `Settings` | `Editor` | `Code Style` | `Java` | `Code Generation`
 
 取消勾选 `Line comment at first column`.
 
