@@ -103,3 +103,15 @@ categories:
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+
+# 代码运行配置
+
+可以编辑配置模板 Application、 JUnit 或其它。
+
+## log4j2 彩色日志
+
+Add VM Options: `-Dlog4j.skipJansi=false`
+
+## SpringBoot 单元测试彩色日志
+
+Add VM Options: `Dspring.output.ansi.enabled=ALWAYS`
