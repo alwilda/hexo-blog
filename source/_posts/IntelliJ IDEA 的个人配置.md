@@ -90,6 +90,14 @@ categories:
 
 {% asset_img line-comment-not-first.png 取消单行注释在行首 %}
 
+## 生成 serialVersionUID
+
+设置路径：`File` | `Settings` | `Editor` | `Inspections`，或直接搜索 `serialVersionUID`。
+
+然后勾选 JVM languages 下的
+
+- [x] Serializable class without 'serialVersionUID'
+
 # 插件
 
 1. [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
