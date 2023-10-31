@@ -114,4 +114,4 @@ Add VM Options: `-Dlog4j.skipJansi=false`
 
 ## SpringBoot 单元测试彩色日志
 
-Add VM Options: `Dspring.output.ansi.enabled=ALWAYS`
+Add VM Options: `-Dspring.output.ansi.enabled=ALWAYS`
