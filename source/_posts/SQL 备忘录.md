@@ -37,7 +37,7 @@ GRANT SELECT ON Schema.SEQ_XXX TO AnotherSchema;
 ```sql
 CREATE TABLE STUDENT
 (
-    -- 主键，指定名称
+    -- 主键，指定名称，自增序列（版本 12c+）
     ID          NUMBER GENERATED AS IDENTITY CONSTRAINT PK_STD_ID PRIMARY KEY,
     STUDENT_ID  VARCHAR2(32),
     -- Check，指定名称
