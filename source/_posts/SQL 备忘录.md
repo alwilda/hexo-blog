@@ -8,6 +8,7 @@ categories:
 # Oracle
 
 - 创建用户、赋权
+<!--more-->
 
 ```sql
 -- 取消 C## 开头的限制
@@ -34,6 +35,7 @@ GRANT SELECT ON Schema.SEQ_XXX TO AnotherSchema;
 ```
 
 - 建表
+
 ```sql
 CREATE TABLE STUDENT
 (
