@@ -7,6 +7,13 @@ categories:
 
 # Oracle
 
+- 查询版本
+
+```sql
+SELECT *
+FROM V$VERSION;
+```
+
 - 创建用户、赋权
 
 ```sql
