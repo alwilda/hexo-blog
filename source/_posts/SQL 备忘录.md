@@ -54,8 +54,8 @@ BEGIN
 END;
 ```
 
-
 - 建表
+
 ```sql
 CREATE TABLE STUDENT
 (
