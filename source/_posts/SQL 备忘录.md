@@ -14,6 +14,8 @@ SELECT *
 FROM V$VERSION;
 ```
 
+<!--more-->
+
 - 创建用户、赋权
 
 ```sql
