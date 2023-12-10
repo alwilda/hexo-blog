@@ -7,6 +7,15 @@ categories:
 
 # Oracle
 
+- 查询版本
+
+```sql
+SELECT *
+FROM V$VERSION;
+```
+
+<!--more-->
+
 - 创建用户、赋权
 <!--more-->
 
@@ -32,6 +41,18 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Schema.TableNmae TO AnotherSchema;
 
 -- Sequence 等同理
 GRANT SELECT ON Schema.SEQ_XXX TO AnotherSchema;
+```
+
+批量赋权：
+
+```sql
+BEGIN
+  FOR UT IN (SELECT TABLE_NAME FROM USER_TABLES)
+    LOOP
+      -- DBMS_OUTPUT.PUT_LINE(UT.TABLE_NAME);
+      EXECUTE IMMEDIATE 'GRANT SELECT, INSERT, UPDATE, DELETE ON ' || UT.TABLE_NAME || ' TO AnotherSchema';
+    END LOOP;
+END;
 ```
 
 - 建表
