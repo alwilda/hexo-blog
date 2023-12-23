@@ -17,6 +17,7 @@ FROM V$VERSION;
 <!--more-->
 
 - 创建用户、赋权
+<!--more-->
 
 ```sql
 -- 取消 C## 开头的限制
