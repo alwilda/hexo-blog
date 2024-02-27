@@ -7,7 +7,7 @@ categories:
 
 # Oracle
 
-- 查询版本
+## 查询版本
 
 ```sql
 SELECT *
@@ -16,7 +16,7 @@ FROM V$VERSION;
 
 <!--more-->
 
-- 创建用户、赋权
+## 创建用户、赋权
 <!--more-->
 
 ```sql
@@ -34,7 +34,7 @@ GRANT CONNECT, RESOURCE TO xiaoming;
 ALTER USER xiaoming QUOTA UNLIMITED ON USERS;
 ```
 
-- 将当前用户的某张表增删改查权限赋予另一个用户
+## 将当前用户的表权限赋予另一个用户
 
 ```sql
 GRANT SELECT, INSERT, UPDATE, DELETE ON Schema.TableNmae TO AnotherSchema;
@@ -43,7 +43,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Schema.TableNmae TO AnotherSchema;
 GRANT SELECT ON Schema.SEQ_XXX TO AnotherSchema;
 ```
 
-批量赋权：
+### 批量赋权：
 
 ```sql
 BEGIN
@@ -55,7 +55,7 @@ BEGIN
 END;
 ```
 
-- 建表
+## 建表
 
 ```sql
 CREATE TABLE STUDENT
