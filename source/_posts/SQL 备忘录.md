@@ -77,3 +77,45 @@ CREATE UNIQUE INDEX UK_STUDENT_ID ON STUDENT (STUDENT_ID);
 COMMENT ON TABLE STUDENT IS '学生表';
 COMMENT ON COLUMN STUDENT.STUDENT_ID IS '学号';
 ```
+
+## RECORD 与 VARRAY 的用法
+
+```sql
+BEGIN
+    DECLARE
+        -- 定义 record 类型
+        TYPE RECORD_TYPE IS RECORD
+                          (
+                              FIELD_1    NUMBER(10),
+                              -- 引用某个表的字段类型
+                              FIELD_2    SYS.XXX.ID%TYPE,
+                              FIELD_3    SYS.XXX.NAME%TYPE
+                          );
+
+        -- 定义数组类型
+        TYPE VARRAY_TYPE IS VARRAY(1000) OF RECORD_TYPE;
+
+        -- 定义一个变量为 record
+        V_RT        RECORD_TYPE;
+        -- 定义一个变量为数组
+        V_ARR VARRAY_TYPE := VARRAY_TYPE();
+    BEGIN
+        FOR REC IN (SELECT ROWNUM, A, B, C,
+                    FROM XXX)
+            LOOP
+                -- 向数组内添加元素
+                V_ARR.EXTEND; -- 在数组末尾添加一个元素
+                V_ARR(REC.ROWNUM).FIELD_1 := REC.A;
+                V_ARR(REC.ROWNUM).FIELD_2 := REC.B;
+                V_ARR(REC.ROWNUM).FIELD_3 := REC.C;
+            END LOOP;
+
+        -- 遍历数组
+        FOR V_INDEX IN V_ARR.FIRST .. V_ARR.LAST
+            LOOP
+                V_RT := V_ARR(V_INDEX);
+                DBMS_OUTPUT.PUT_LINE(V_RT.FIELD_1);
+            END LOOP;
+    END;
+END;
+```
