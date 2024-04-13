@@ -18,7 +18,7 @@ timezone: "Asia/Shanghai"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://lyqblog.com
+url: https://lyqblog.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
