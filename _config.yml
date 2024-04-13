@@ -109,7 +109,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/kinglyq/kinglyq.github.io.git
+  repo: https://github.com/butcherl7/butcherl7.github.io.git
   branch: master
 
 search:
