@@ -18,7 +18,7 @@ timezone: "Asia/Shanghai"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://lyqblog.com/
+# url: 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -109,7 +109,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/butcherl7/butcherl7.github.io.git
+  repo: https://github.com/vondila7/vondila7.github.io
   branch: master
 
 search:
