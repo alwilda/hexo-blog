@@ -110,7 +110,7 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/vondila7/vondila7.github.io
-  branch: master
+  branch: main
 
 search:
   path: search.xml
