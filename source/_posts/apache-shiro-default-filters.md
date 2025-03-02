@@ -1,5 +1,5 @@
 ---
-title: Apache Shiro 默认拦截器
+title: Apache Shiro 默认过滤器
 date: 2021-04-18 16:34:43
 tags: Apache Shiro
 categories:
