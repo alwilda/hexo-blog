@@ -42,7 +42,7 @@ categories:
 
 ```
 /**
- * @author <a href="https://github.com/vondila7" target="_blank">Vondila<a/>
+ * @author <a href="https://github.com/alwilda" target="_blank">Vondila<a/>
  */
 ```
 
