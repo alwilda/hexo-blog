@@ -9,7 +9,7 @@ categories:
 
 <!--more-->
 
-只需做如下配置：
+# 环境配置
 
 将 Java 安装路径和 Maven settings.xml 替换为实际路径即可。
 
@@ -24,3 +24,10 @@ categories:
 }
 ```
 
+# 开发体验配置
+
+## 提示忽略大小写
+
+```
+vscode://settings/java.completion.matchCase
+```
