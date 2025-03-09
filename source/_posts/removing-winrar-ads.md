@@ -1,7 +1,7 @@
 ---
 title: 去除 WinRAR 的弹窗广告
 date: 2022-03-13 09:47:08
-tags:
+tags: Windows
 categories:
 ---
 

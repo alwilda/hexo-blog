@@ -2,6 +2,8 @@
 title: Linux 下编译安装 Redis
 date: 2023-05-14 17:40:07
 tags:
+ - Linux
+ - Redis
 categories:
 ---
 

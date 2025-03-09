@@ -1,8 +1,8 @@
 ---
 title: Git 删除提交记录
 date: 2022-04-30 18:30:50
-tags:
-categories: Git
+tags: Git
+categories:
 ---
 
 1. 使用 git log 查找到要删除提交记录的上一条提交的 commit 的 id

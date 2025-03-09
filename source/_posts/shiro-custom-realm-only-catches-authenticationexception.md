@@ -1,7 +1,7 @@
 ---
 title: Shiro 自定义 Realm 却只能捕获 AuthenticationException
 date: 2022-03-31 21:55:22
-tags:
+tags: Apache Shiro
 categories:
 ---
 

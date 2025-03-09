@@ -1,7 +1,9 @@
 ---
 title: Java JSON library - Jackson 的使用
 date: 2021-03-16 10:54:51
-tags: Java
+tags: 
+  - Java
+  - Jackson
 ---
 
 从实际使用的角度列出对 `Jackson` 的一些操作。

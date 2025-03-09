@@ -1,7 +1,7 @@
 ---
 title: 在 Windows 下使用命令行计算文件校验值
 date: 2023-01-01 16:45:16
-tags:
+tags: Windows
 categories:
 ---
 在 Windows 中可以使用命令 `certutil` 来计算文件的校验值。

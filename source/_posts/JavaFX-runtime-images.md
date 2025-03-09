@@ -1,8 +1,8 @@
 ---
 title: JavaFX Runtime images (Java 11+)
 date: 2021-03-09 16:23:25
-tags:
-categories: JavaFX
+tags: JavaFX
+categories:
 ---
 
 JavaFX 项目的 `Runtime images` 是一个自定义 JRE，它仅包含应用程序所需的平台模块。

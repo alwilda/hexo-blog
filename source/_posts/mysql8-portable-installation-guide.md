@@ -1,7 +1,7 @@
 ---
 title: MySQL 8.x 绿色版安装教程
 date: 2023-02-12 22:35:48
-tags:
+tags: MySQL
 categories:
 ---
 

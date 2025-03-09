@@ -1,11 +1,11 @@
 ---
-title: VS Code 终端进程启动失败
+title: VSCode 终端进程启动失败
 date: 2021-09-11 14:50:00
 tags: Visual Studio Code
 categories:
 ---
 
-关于 VS Code 打开终端报错——终端进程启动失败： A native exception occurred during launch (Unable to start terminal process: CreateProcess failed) 的解决方案。
+关于 VSCode 打开终端报错——终端进程启动失败： A native exception occurred during launch (Unable to start terminal process: CreateProcess failed) 的解决方案。
 
 <!--more-->
 
@@ -13,7 +13,7 @@ categories:
 
 -- 图
 
-当输入 `terminal.integrated.profiles.windows`，VS Code 会给出提示并在确定后自动给出默认配置，类似如下的样子：
+当输入 `terminal.integrated.profiles.windows`，VSCode 会给出提示并在确定后自动给出默认配置，类似如下的样子：
 
 ```json
 "terminal.integrated.profiles.windows": {
@@ -45,7 +45,7 @@ categories:
 
 另一个问题❓
 
-现在打开终端是没问题了，但是我们通过 VS Code 去运行 npm 脚本时，却还提示
+现在打开终端是没问题了，但是我们通过 VSCode 去运行 npm 脚本时，却还提示
 
 ```shell
 > Executing task: yarn run start <

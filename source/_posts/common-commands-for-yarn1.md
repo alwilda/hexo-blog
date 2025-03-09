@@ -1,7 +1,7 @@
 ---
 title: Yarn 1.x 常用命令
 date: 2022-01-10 14:49:39
-tags:
+tags: Yarn
 categories:
 ---
 

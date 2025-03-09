@@ -1,7 +1,7 @@
 ---
 title: 常用 cmd 命令
 date: 2023-05-01 19:21:24
-tags:
+tags: CMD
 categories:
 ---
 

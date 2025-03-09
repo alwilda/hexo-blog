@@ -1,7 +1,7 @@
 ---
 title: 使用 refs 调用组件
 date: 2022-05-29 16:53:38
-tags:
+tags: React
 categories:
 ---
 

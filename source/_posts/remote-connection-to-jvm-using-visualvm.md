@@ -1,7 +1,7 @@
 ---
 title: 使用 VisualVM 远程连接 JVM
 date: 2022-12-06 15:35:26
-tags:
+tags: Java
 categories:
 ---
 

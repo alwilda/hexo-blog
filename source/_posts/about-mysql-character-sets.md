@@ -1,7 +1,7 @@
 ---
 title: MySQL 字符集
 date: 2022-11-05 22:48:00
-tags:
+tags: MySQL
 categories:
 ---
 

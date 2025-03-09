@@ -1,7 +1,7 @@
 ---
 title: 为 Git 设置代理
 date: 2024-08-16 21:40:04
-tags:
+tags: Git
 categories:
 ---
 

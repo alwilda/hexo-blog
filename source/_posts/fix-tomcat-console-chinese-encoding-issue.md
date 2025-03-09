@@ -1,7 +1,7 @@
 ---
 title: 解决 tomcat 控制台中文乱码
 date: 2024-06-16 15:08:41
-tags:
+tags: Apache Tomcat
 categories:
 ---
 

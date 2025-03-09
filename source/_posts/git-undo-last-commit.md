@@ -1,8 +1,8 @@
 ---
 title: Git 撤销上次的提交
 date: 2022-04-30 18:32:03
-tags:
-categories: Git
+tags: Git
+categories:
 ---
 
 这条命令就能撤回刚刚的提交。

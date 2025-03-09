@@ -1,8 +1,8 @@
 ---
 title: Git 修改提交信息
 date: 2022-04-30 18:33:26
-tags:
-categories: Git
+tags: Git
+categories:
 ---
  
 1. 输入如下命令进入变基， head 后的数字表示显示最近多少次的提交信息

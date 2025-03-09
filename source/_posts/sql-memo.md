@@ -2,6 +2,8 @@
 title: SQL 备忘录
 date: 2023-11-02 18:17:58
 tags:
+  - SQL
+  - Oracle
 categories:
 ---
 
