@@ -7,61 +7,65 @@ tags:
 categories:
 ---
 
-首先进入官网 [Download | Redis](https://redis.io/download/) 下载安装包。
+首先进入官网 [Download | Redis](https://download.redis.io/releases/) 下载安装包。
 
 <!--more-->
 
 # 安装
 
-1. 解压安装包
-
-```shell
-tar -zxvf redis-7.0.11.tar.gz
-```
-
-2. 预编译
-
-```shell
-cd redis-7.0.11
-make
-```
-
-3. 安装
+解压后进行编译
 
 ```shell
 # 安装到 /usr/local/redis 目录
-make install prefix=/usr/local/redis/
+make PREFIX=/usr/local/redis install
 ```
 
-# 加入系统服务
+# 命令
 
-1. `vim /etc/systemd/system/redis.service`
-2. 写入以下内容：
+启动：
 
+```bash
+/usr/local/redis/bin/redis-server /usr/local/redis/redis.conf
 ```
+
+通过 cli 连接：
+
+```bash
+redis-cli -h host -p port -a password
+```
+
+# 服务
+
+```bash
+sudo groupadd redis 
+sudo useradd -r -g redis -s /bin/false redis 
+sudo chown -R redis:redis /usr/local/redis /data/redis
+```
+
+```bash
+vim /etc/systemd/system/redis.service
+```
+
+{% codeblock redis.service lang:ini %}
 [Unit]
-Description=redis-server
+Description=Redis In-Memory Data Store
 After=network.target
-
+ 
 [Service]
+User=redis
+Group=redis
 Type=forking
-ExecStart= /usr/local/redis/bin/redis-server /usr/local/redis/bin/redis.conf
-PrivateTmp=true
-
+ExecStart=/usr/local/redis/bin/redis-server /data/redis/redis.conf
+ExecStop=/usr/local/redis/bin/redis-cli -p 8379 shutdown
+Restart=no
+  
 [Install]
 WantedBy=multi-user.target
-```
+{% endcodeblock %}
 
-2. 重载系统服务：`systemctl daemon-reload`
+刷新服务：`systemctl daemon-reload`
 
-3. 服务命令：
-
-    - 关闭 redis-server：`systemctl stop redis.service`
-    - 开启 redsi-server：`systemctl start redis.service`
-    - 查看 redis-server 状态：`systemctl status redis.service`
-
-4. 开机自启
-
-```shell
-systemctl enable redis.service 
-```
+- 关闭 redis：`systemctl stop redis`
+- 开启 redis：`systemctl start redis`
+- 查看 redis：`systemctl status redis`
+- 自启 redis：`systemctl enable redis`
