@@ -5,7 +5,7 @@
   }
 }
 
-/* 调整 Prism下代码的默认字体大小 */
+/* 调整 Prism 下代码的默认字体大小 */
 pre[class*="language-"] {
   font-size: 14px;
 }
