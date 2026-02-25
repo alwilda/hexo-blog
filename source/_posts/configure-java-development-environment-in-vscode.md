@@ -1,5 +1,5 @@
 ---
-title: 在 VSCode 中配置 Java 开发环境
+title: 在 VS Code 中配置 Java 开发环境
 date: 2025-02-21 21:05:33
 tags: Visual Studio Code
 categories:

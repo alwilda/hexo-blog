@@ -1,5 +1,5 @@
 ---
-title: VSCode 在代码片段中没有提示
+title: VS Code 在代码片段中没有提示
 date: 2021-05-31 22:34:00
 tags: Visual Studio Code
 categories:
