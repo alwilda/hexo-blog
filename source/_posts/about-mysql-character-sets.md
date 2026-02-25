@@ -13,7 +13,7 @@ utf-8 编码可能 2 个字节、3 个字节、4 个字节的字符，但是 MyS
 
 查看当前字符集：
 
-```shell
+```sql
 SHOW VARIABLES WHERE Variable_name LIKE 'character_set_%' OR Variable_name LIKE 'collation%';
 ```
 
@@ -23,7 +23,7 @@ SHOW VARIABLES WHERE Variable_name LIKE 'character_set_%' OR Variable_name LIKE 
 
 修改配置文件，一般名称为 `my.ini`，加入以下配置：
 
-```
+```ini
 [client]
 default-character-set = utf8mb4
 
@@ -46,6 +46,6 @@ init_connect='SET NAMES utf8mb4'
 
 # 建表语句
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS test DEFAULT CHARSET utf8mb4 COLLATE utf8_general_ci;
 ```
