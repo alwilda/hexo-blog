@@ -4,14 +4,12 @@
 
 # Site
 title: Knowledge
-subtitle: "This'blog is for U"
+subtitle: "Ipsa scientia potestas est"
 description: "Whatever It Takes!"
 keywords:
   - 编程
   - 人生
-  - Java
   - 随笔
-  - JavaScript
 author: 😳
 language: zh-CN
 timezone: "Asia/Shanghai"
@@ -49,17 +47,11 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
-highlight:
-  enable: false
-  line_number: true
-  auto_detect: false
-  tab_replace: ""
-  wrap: true
-  hljs: false
+syntax_highlighter: prismjs
 prismjs:
-  enable: true
   preprocess: true
   line_number: true
+  line_threshold: 0
   tab_replace: ""
 
 # Home page setting
