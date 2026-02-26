@@ -82,6 +82,7 @@ class MyClassApp extends React.Component<any, any> {
 ```
 
 # Function
+
 ```tsx
 const MyFunctionModal = React.forwardRef<MyFunctionModalRefs, any>((props, ref) => {
   const [visible, setVisible] = useState(false);
