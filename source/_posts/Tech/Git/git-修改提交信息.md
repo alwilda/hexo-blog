@@ -7,7 +7,8 @@ categories:
 ---
  
 1. 输入如下命令进入变基， head 后的数字表示显示最近多少次的提交信息
-```
+
+```bash
 git rebase -i HEAD~2 
 ```
 
@@ -20,15 +21,15 @@ git rebase -i HEAD~2
 4. 输入 **`:wq`** 保存退出
 
 5. 修改提交记录
-```
+
+```bash
 git commit --amend -m '新的提交信息'
 ``` 
 
 6. 退出 rebase 模式
-```
+
+```bash
 git rebase --continue
 ``` 
 
----
-
- `git rebase --abort`
+> `git rebase --abort`

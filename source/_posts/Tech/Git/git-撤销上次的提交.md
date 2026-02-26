@@ -7,13 +7,14 @@ categories:
 ---
 
 这条命令就能撤回刚刚的提交。
-```
+
+```bash
 git reset HEAD^
 ```
 
 更多的参数：
 <!--more-->
-```
+```bash
 git reset [--soft | --mixed | --hard] [-q] [<commit>]
 ```
 

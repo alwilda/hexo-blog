@@ -12,6 +12,6 @@ categories:
 
 进入 `Git` 仓库执行：
 
-```shell
+```bash
 git config core.ignorecase false
 ```
