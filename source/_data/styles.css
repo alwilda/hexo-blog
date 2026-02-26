@@ -11,7 +11,7 @@ pre[class*="language-"] {
 }
 
 /* 调整返回顶部按钮的位置 */
-.back-to-top{
+.back-to-top {
   left: auto;
   right: 30px;
 }
