@@ -9,3 +9,9 @@
 pre[class*="language-"] {
   font-size: 14px;
 }
+
+/* 调整返回顶部按钮的位置 */
+.back-to-top{
+  left: auto;
+  right: 30px;
+}
