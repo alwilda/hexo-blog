@@ -1,5 +1,5 @@
 ---
-title: 使用 refs 调用组件
+title: 使用 refs 调用 React 组件的方法
 tags: React
 abbrlink: c543f67c
 date: 2022-05-29 16:53:38
