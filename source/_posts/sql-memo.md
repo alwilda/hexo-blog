@@ -25,15 +25,15 @@ FROM V$VERSION;
 -- 取消 C## 开头的限制
 ALTER SESSION SET "_ORACLE_SCRIPT"= TRUE;
 
---           用户名                 密码
-CREATE USER xiaoming IDENTIFIED BY 123456;
+-- 用户名/密码
+CREATE USER tom IDENTIFIED BY 123456;
 
 -- 赋予连接权限 
 -- CONNECT: 连接数据库、建表…… RESOURCE: 建触发器、过程……
-GRANT CONNECT, RESOURCE TO xiaoming;
+GRANT CONNECT, RESOURCE TO tom;
 
 -- 授予对表空间 'USERS' 的权限。
-ALTER USER xiaoming QUOTA UNLIMITED ON USERS;
+ALTER USER tom QUOTA UNLIMITED ON USERS;
 ```
 
 ## 将当前用户的表权限赋予另一个用户
@@ -47,7 +47,7 @@ GRANT SELECT ON Schema.SEQ_XXX TO AnotherSchema;
 
 ### 批量赋权：
 
-```sql
+```plsql
 BEGIN
   FOR UT IN (SELECT TABLE_NAME FROM USER_TABLES)
     LOOP
@@ -82,7 +82,7 @@ COMMENT ON COLUMN STUDENT.STUDENT_ID IS '学号';
 
 ## RECORD 与 VARRAY 的用法
 
-```sql
+```plsql
 BEGIN
     DECLARE
         -- 定义 record 类型
