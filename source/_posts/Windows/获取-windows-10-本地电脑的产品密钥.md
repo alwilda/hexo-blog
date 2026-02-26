@@ -1,12 +1,13 @@
 ---
-title: 获取本机win10的产品密钥
+title: 获取 Windows 10 本地电脑的产品密钥
 tags: Windows
 abbrlink: 85bc518b
 date: 2021-03-21 09:14:06
 categories:
 ---
 
-如何查看本机 `win10` 的产品密钥呢？👇
+如何查看本地 Windows 的产品密钥呢？
+首先进入注册表：
 
 <!--more-->
 
@@ -18,4 +19,4 @@ categories:
    计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
    ```
 
-3. 进入 `SoftwareProtectionPlatform` 的详情页面后，打开 `BackupProductKeyDefault`，里面的数值数据就是激活密钥。
+3. 进入 `SoftwareProtectionPlatform` 的详情页面后，打开 `BackupProductKeyDefault`，*数值数据* 就是激活密钥。
