@@ -35,3 +35,37 @@ public class Info {
     public String name;
 }
 ```
+
+# 2.0 的配置
+
+```java
+private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+private static final String STD_DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
+private static final DateTimeFormatter STD_DATETIME_FORMATTER = DateTimeFormatter.ofPattern(STD_DATETIME_FORMAT);
+
+static {
+    JavaTimeModule javaTimeModule = new JavaTimeModule();
+    javaTimeModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(STD_DATETIME_FORMATTER));
+    javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(STD_DATETIME_FORMATTER));
+    OBJECT_MAPPER.registerModule(javaTimeModule);
+    OBJECT_MAPPER.setDateFormat(new SimpleDateFormat(STD_DATETIME_FORMAT));
+    // 反序列化忽略未知属性
+    OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+}
+```
+
+# 3.0 后的配置
+
+```java
+private static final String STD_DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
+private static final DateTimeFormatter STD_DATETIME_FORMATTER = DateTimeFormatter.ofPattern(STD_DATETIME_FORMAT);
+
+private static final JsonMapper JSON_MAPPER = JsonMapper.builder()
+        .defaultDateFormat(new SimpleDateFormat(STD_DATETIME_FORMAT))
+        // 反序列化忽略未知属性
+        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+        .addModule(new SimpleModule()
+                .addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(STD_DATETIME_FORMATTER))
+                .addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(STD_DATETIME_FORMATTER)))
+        .build();
+```
