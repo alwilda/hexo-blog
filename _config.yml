@@ -117,3 +117,6 @@ search:
   field: post
   content: true
   format: html
+
+plugins:
+  - hexo-reference
