@@ -30,6 +30,7 @@ custom_file_path:
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.css
+  bodyEnd: source/_data/body-end.njk
 
 # ---------------------------------------------------------------
 # Scheme Settings

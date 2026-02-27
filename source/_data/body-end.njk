@@ -1,0 +1,14 @@
+<script>
+// 如果脚注是超链接，则 tooltip 只显示链接文本
+// 严格匹配 Markdown 超链接格式
+const regex = /^\[([^\]]+)\]\([^\)]+\)$/;
+document.querySelectorAll('a[rel="footnote"] span').forEach(span => {
+    const label = span.getAttribute('aria-label');
+    if (label) {
+        const matches = label.trim().match(regex);
+        if (Array.isArray(matches) && matches.length > 0) {
+            span.setAttribute('aria-label', matches[1]);
+        }
+    }
+});
+</script>
