@@ -26,7 +26,7 @@ mybatis-plus:
 
 关于 `jdbcTypeForNull` 的官方描述：
 
-{% blockquote @MyBatis https://mybatis.org/mybatis-3/zh/configuration.html#设置（settings） %}
+{% blockquote @MyBatis https://mybatis.org/mybatis-3/zh_CN/configuration.html#settings %}
 | 设置名 | 描述 | 有效值 | 默认值 |
 |  ----  | ----  | ---- | ---- |
 | jdbcTypeForNull | 当没有为参数指定特定的 JDBC 类型时，空值的默认 JDBC 类型。 某些数据库驱动需要指定列的 JDBC 类型，多数情况直接用一般类型即可，比如 NULL、VARCHAR 或 OTHER。 | JdbcType 常量，常用值：NULL、VARCHAR 或 OTHER。 | OTHER |
@@ -57,4 +57,6 @@ student.setName(null);
 studentService.updateById(student);
 ```
 
-在 **MySQL** 上测试，发现无需额外设置 `jdbcTypeForNull` 也可更新字段为 `null`。
+{% note default %}
+在 MySQL 上测试，发现无需额外设置 `jdbcTypeForNull` 也可更新字段为 `null`。
+{% endnote %}
