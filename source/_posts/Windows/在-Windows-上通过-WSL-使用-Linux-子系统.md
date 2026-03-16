@@ -52,3 +52,24 @@ Docker Desktop 设置国内镜像：
 这里使用 [阿里云容器镜像服务](https://cr.console.aliyun.com/instances/mirrors) 作为国内镜像源。
 
 登录阿里云容器镜像服务控制台，在左侧菜单栏选择 “镜像工具” -> “镜像加速器” 即可看到专属加速器地址。
+
+# 文件管理
+
+{% tabs apt %}
+<!-- tab 从资源管理器访问-->
+在搜索或地址栏输入 `\\wsl$` 并打开，即可看到所有已安装的 Linux 发行版（如 Ubuntu），双击进入即可通过拖拽、复制、粘贴来传输文件。
+
+{% note info %}
+在 WSL 终端中输入 `explorer.exe .`（注意后面有个点），可以直接在当前 Linux 路径下打开 Windows 文件夹窗口。
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab 使用 VS Code-->
+打开 VS Code，安装 WSL 扩展。
+
+点击左下角的“远程窗口”图标，选择 Connect to WSL。
+
+连接后，可以直接从 Windows 桌面把文件拖入 VS Code 的资源管理器侧边栏，它会自动上传到 WSL 对应的路径。
+<!-- endtab -->
+{% endtabs %}
+
