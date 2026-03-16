@@ -1,5 +1,5 @@
 ---
-title: MySQL 8.x 绿色版安装教程
+title: 在 Windows 上安装 MySQL 8.x
 tags: MySQL
 abbrlink: f43830c6
 date: 2023-02-12 22:35:48
