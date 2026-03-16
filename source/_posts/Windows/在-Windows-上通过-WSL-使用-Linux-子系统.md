@@ -73,3 +73,12 @@ Docker Desktop 设置国内镜像：
 <!-- endtab -->
 {% endtabs %}
 
+# 其它
+
+在 WSL 2 架构下，Ubuntu 并不是以文件夹的形式直接散落在 Windows 磁盘中，而是被封装在一个虚拟磁盘文件（.vhdx）里。默认情况下，Ubuntu 的虚拟磁盘文件位于 Windows 用户目录下：
+
+```
+C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu...[一串随机字符]\LocalState\ext4.vhdx
+```
+
+`ext4.vhdx`：这个文件就是整个 Ubuntu 的“硬盘”。所有的 Linux 文件、安装的软件、数据库数据都存在这个大文件里。
