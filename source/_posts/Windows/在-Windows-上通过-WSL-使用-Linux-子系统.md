@@ -73,6 +73,21 @@ Docker Desktop 设置国内镜像：
 <!-- endtab -->
 {% endtabs %}
 
+# 重置系统
+
+打开 PowerShell（管理员）执行以下命令：
+
+```powershell
+wsl --unregister Ubuntu
+```
+
+如果是在设置里重置的系统，导致报错如下错误，那么也执行同样执行一下上面的命令。
+
+```
+WSL2: 系统找不到指定的文件。
+错误代码: Wsl/Service/CreateInstance/MountDisk/HCS/ERROR_FILE_NOT_FOUND
+```
+
 # 其它
 
 在 WSL 2 架构下，Ubuntu 并不是以文件夹的形式直接散落在 Windows 磁盘中，而是被封装在一个虚拟磁盘文件（.vhdx）里。默认情况下，Ubuntu 的虚拟磁盘文件位于 Windows 用户目录下：
