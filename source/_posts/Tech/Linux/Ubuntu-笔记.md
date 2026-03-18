@@ -72,6 +72,9 @@ sudo apt update
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install language-pack-zh-hans
 ```
 
