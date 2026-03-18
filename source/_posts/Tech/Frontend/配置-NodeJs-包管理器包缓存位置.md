@@ -77,7 +77,9 @@ yarn config set global-folder <path>
 1. `yarn config set global-folder D:\Yarn\Global`
 2. `yarn config set prefix  D:\Yarn\Global`
 
-`npm` 或 `pnpm` 或 `yarn` 都需要将全局路径添加到环境变量 *`PATH`* 中，方可使用全局安装的那些包的命令。
+{% note info no-icon %}
+**`npm`、`pnpm`、`yarn` 都需要将全局路径添加到环境变量 *`PATH`* 中，方可使用全局安装的那些包的命令。**
+{% endnote %}
 
 # 管理工具
 
