@@ -88,6 +88,37 @@ WSL2: 系统找不到指定的文件。
 错误代码: Wsl/Service/CreateInstance/MountDisk/HCS/ERROR_FILE_NOT_FOUND
 ```
 
+# 使用本地代理
+
+以 v2ray 为例：
+
+1. 在 v2rayN 参数设置里启用 “允许来自局域网的连接”。
+2. 获取 Windows 宿主机 IP 并设置环境变量。
+
+```bash 
+# 获取宿主机 IP
+export hostip=$(grep nameserver /etc/resolv.conf | awk '{print $2}')
+
+# 设置代理端口（例如 v2ray 端口是 10808）
+export PROXY_PORT=10808
+
+alias proxy='
+    export http_proxy="http://$hostip:$PROXY_PORT"
+    export https_proxy="http://$hostip:$PROXY_PORT"
+    export all_proxy="socks5://$hostip:$PROXY_PORT"
+    echo "Proxy on: $hostip"
+'
+alias unproxy='
+    unset http_proxy
+    unset https_proxy
+    unset all_proxy
+    echo "Proxy off"
+'
+```
+
+3. 执行 `source ~/.bashrc` 使其生效。
+4. 之后只需在终端输入 `proxy` 即可开启代理，输入 `unproxy` 关闭。
+
 # 其它
 
 在 WSL 2 架构下，Ubuntu 并不是以文件夹的形式直接散落在 Windows 磁盘中，而是被封装在一个虚拟磁盘文件（.vhdx）里。默认情况下，Ubuntu 的虚拟磁盘文件位于 Windows 用户目录下：
