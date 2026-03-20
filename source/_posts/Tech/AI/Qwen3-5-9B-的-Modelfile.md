@@ -10,7 +10,7 @@ categories:
 
 <!--more-->
 
-`Qwen3.5-9B` GGUF 模型文件下载地址：[Qwen3.5-9B-GGUF · 模型库](https://modelscope.cn/models/unsloth/Qwen3.5-9B-GGUF)。
+GGUF 格式下载地址：[Qwen3.5-9B-GGUF · 模型库](https://modelscope.cn/models/unsloth/Qwen3.5-9B-GGUF)。
 
 ```dockerfile
 # 替换为实际路径
@@ -94,3 +94,5 @@ SYSTEM """你是一个严谨、高效且友好的 AI 助手。
 ```bash
 ollama create qwen3.5-9b -f Modelfile
 ```
+
+[LM Studio with AMD RyzenAI](https://lmstudio.ai/ryzenai)
