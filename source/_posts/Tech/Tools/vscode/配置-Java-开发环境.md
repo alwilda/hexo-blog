@@ -28,6 +28,22 @@ categories:
 | maven.terminal.useJavaHome | 如果此值为 true ，并且配置项 java.home 具有值，则在创建新的终端窗口时，将环境变量 JAVA_HOME 设置为 java.home 的值。 | true |
 | java.maven.downloadSources | 启用/禁用在导入 Maven 项目时下载依赖源码。 | true |
 
+配置多个不同版本的 JDK
+
+```json
+"java.configuration.runtimes": [
+    {
+        "name": "JavaSE-1.8",
+        "path": "D:\\Java\\8",
+        "default": true
+    },
+    {
+        "name": "JavaSE-25",
+        "path": "D:\\Java\\25",
+    },
+],
+```
+
 # 开发体验配置
 
 ## 提示忽略大小写
