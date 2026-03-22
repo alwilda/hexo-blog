@@ -101,7 +101,7 @@ WSL2: 系统找不到指定的文件。
 
 ```bash 
 # 获取宿主机 IP
-export hostip=$(grep nameserver /etc/resolv.conf | awk '{print $2}')
+export hostip=$(ip route show | grep -i default | awk '{ print $3}')
 
 # 设置代理端口（例如 v2ray 端口是 10808）
 export PROXY_PORT=10808
