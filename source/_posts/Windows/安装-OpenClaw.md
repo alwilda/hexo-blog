@@ -96,11 +96,32 @@ Try to load the model with a larger context length, or provide a shorter input.
 
 请在加载模型时调大上下文长度，例如提升到 16384 (16k) 或 32768（32k），具体取决于显存大小。
 
-# OpenClaw 设置
+# 使用 OpenClaw
 
-1. 如果配置了 `OPENCLAW_HOME` 环境变量，先执行一下 `openclaw setup`。
+{% note %}
+如果配置了 `OPENCLAW_HOME` 环境变量，先执行一下 `openclaw setup`。
+{% endnote %}
 
-# 其它：
+>[CLI 参考 - OpenClaw](https://docs.openclaw.ai/zh-CN/cli)
+
+启动：
+
+```bash
+openclaw gateway --port 18789
+```
+
+新建 Agent：
+
+```bash
+openclaw agents add [agent-name]
+```
+删除 Agent
+
+```bash
+openclaw agents delete [agent-name]
+```
+
+# 故障排除：
 
 - [故障排除 - OpenClaw](https://docs.openclaw.ai/zh-CN/gateway/troubleshooting)
 - [OpenClaw 部署常见问题全解 - 博客园](https://www.cnblogs.com/qiniushanghai/p/19706144)
