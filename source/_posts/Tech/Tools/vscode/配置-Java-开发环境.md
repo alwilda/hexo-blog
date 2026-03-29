@@ -46,6 +46,32 @@ categories:
 ],
 ```
 
+完整配置示例：
+
+```json
+{
+    "java.jdt.ls.java.home": "D:\\Java\\25",
+    "java.configuration.maven.userSettings": "D:\\maven3\\conf\\settings.xml",
+    "java.configuration.maven.globalSettings": "D:\\maven3\\conf\\settings.xml",
+    "maven.settingsFile": "D:\\maven3\\conf\\settings.xml",
+    "maven.executable.path": "D:\\maven3\\bin\\mvn",
+    "maven.terminal.useJavaHome": true,
+    "java.maven.downloadSources": true,
+    "java.completion.matchCase": "off",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "D:\\Java\\8",
+            "default": true
+        },
+        {
+            "name": "JavaSE-25",
+            "path": "D:\\Java\\25",
+        },
+    ],
+}
+```
+
 ## 配置不生效的解决方法
 
 有时候 VS Code 显示没生效，其实只是缓存没刷新。
