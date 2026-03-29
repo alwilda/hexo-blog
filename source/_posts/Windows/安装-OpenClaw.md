@@ -121,7 +121,7 @@ openclaw agents add [agent-name]
 openclaw agents delete [agent-name]
 ```
 
-# 故障排除：
+# 故障排除
 
 - [故障排除 - OpenClaw](https://docs.openclaw.ai/zh-CN/gateway/troubleshooting)
 - [OpenClaw 部署常见问题全解 - 博客园](https://www.cnblogs.com/qiniushanghai/p/19706144)
