@@ -91,6 +91,12 @@ mvn help:effective-settings
 
 # 开发体验配置
 
+## 通过命令安装依赖
+
+```bash
+mvn dependency:resolve -U
+```
+
 ## 提示忽略大小写
 
 ```
