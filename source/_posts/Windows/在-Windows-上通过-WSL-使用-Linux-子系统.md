@@ -53,6 +53,37 @@ Docker Desktop 设置国内镜像：
 
 登录阿里云容器镜像服务控制台，在左侧菜单栏选择 “镜像工具” -> “镜像加速器” 即可看到专属加速器地址。
 
+如果加速地址也不好用，可以尝试使用下面的地址：
+
+```bash
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": [
+    "https://2a6bf1988cb6428c877f723ec7530dbc.mirror.swr.myhuaweicloud.com",
+    "https://docker.m.daocloud.io",
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com",
+    "https://your_preferred_mirror",
+    "https://dockerhub.icu",
+    "https://docker.registry.cyou",
+    "https://docker-cf.registry.cyou",
+    "https://dockercf.jsdelivr.fyi",
+    "https://docker.jsdelivr.fyi",
+    "https://dockertest.jsdelivr.fyi",
+    "https://mirror.aliyuncs.com",
+    "https://dockerproxy.com",
+    "https://mirror.baidubce.com",
+    "https://docker.m.daocloud.io",
+    "https://docker.nju.edu.cn",
+    "https://docker.mirrors.sjtug.sjtu.edu.cn",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://mirror.iscas.ac.cn",
+    "https://docker.rainbond.cc"
+  ]
+}
+EOF
+```
+
 # 文件管理
 
 {% tabs apt %}
