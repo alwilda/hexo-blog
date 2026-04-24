@@ -1,5 +1,5 @@
 ---
-title: Node.js 包管理器配置包缓存位置
+title: NodeJS 包管理器缓存位置配置
 tags:
   - npm
   - pnpm
@@ -83,23 +83,27 @@ yarn config set global-folder <path>
 
 # 管理工具
 
-## cgr 
+## cgr
 
-> 同时或分开管理 npm、yarn 源的工具，用来代替 nrm
+安装：
 
-1. 安装 `npm install -g cgr`
-2. 使用
-   - 默认源列表: N 代表 npm，Y 代表 yarn，* 代表 npm 和 yarn 共用的源
-   - 源切换: y/yarn 代表 yarn 切换，n/npm 代表 npm 切换，大小写均可，type 为空，表示同时切换源
-3. 添加私有源 `cgr add 源name http[s]://xxx`
-4. 删除 `cgr del 源`
-5. 测试 `cgr test`
+```bash
+npm install -g cgr
+```
 
-## nrm
+使用：
+- 默认源列表: N 代表 npm，Y 代表 yarn，* 代表 npm 和 yarn 共用的源
+- 源切换: y/yarn 代表 yarn 切换，n/npm 代表 npm 切换，大小写均可，type 为空，表示同时切换源
 
-1. 安装 `npm install -g nrm`
-2. 查看所有配置的源 `nrm ls`
-3. 切换源 `nrm use <registry>`
-4. 添加源 `nrm add registry http[s]://xxx`
-5. 删除源 `nrm del <registry>`
-6. 测试响应速度 `nrm test npm`
+```bash
+Commands:
+  ls                           List all the registries
+  current                      Show current registry name
+  use <registry> [type]        Change registry to registry
+  add <registry> <url> [home]  Add one custom registry
+  del <registry>               Delete one custom registry
+  test [registry]              Show response time for specific or all registries
+  on [type]                    Enable pnpm or other type
+  off [type]                   Disable pnpm or other type
+  help                         Print this help
+```
