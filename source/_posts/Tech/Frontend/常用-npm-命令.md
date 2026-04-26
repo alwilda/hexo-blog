@@ -70,6 +70,6 @@ npm cache clean --force
 > 当遇到安装卡住或不明原因报错时，开启 Verbose 模式，可以排查问题。
 
 ```bash
-npm install -g <package-name> --verbose # 简写 -d
+npm install -g <package-name> --verbose
 ```
 

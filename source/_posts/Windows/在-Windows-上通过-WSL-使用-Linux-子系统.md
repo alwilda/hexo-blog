@@ -31,9 +31,18 @@ wsl --list --online
 首次启动 Ubuntu 时，系统会要求你设置用户名 (Username) 和 密码 (Password)。这与 Windows 账户无关，是 Linux 系统独立的权限凭证。
 
 常用管理命令：
-- 进入 Linux： 在命令行输入 `wsl`。
-- 查看状态： `wsl -l -v`（查看已安装的版本和运行状态）。
-- 关闭 WSL： `wsl --shutdown`（当需要彻底重启 Linux 或是释放内存时使用）。
+- 进入 Linux 在命令行输入：
+```bash
+wsl
+```
+- 查看状态（查看已安装的版本和运行状态）：
+```bash
+wsl -l -v
+```
+- 关闭 WSL（当需要彻底重启 Linux 或是释放内存时使用）：
+```bash
+wsl --shutdown
+```
 
 # 集成 Docker
 
@@ -124,10 +133,10 @@ WSL2: 系统找不到指定的文件。
 以 v2ray 为例：
 
 1. 在 v2rayN 参数设置里启用 “允许来自局域网的连接”。
-2. 获取 Windows 宿主机 IP 并设置环境变量。
+2. 获取 Windows 宿主机 IP 并设置环境变量：
 
 ```bash
-~/.bashrc
+vim ~/.bashrc
 ```
 
 ```bash 
@@ -151,7 +160,12 @@ alias unproxy='
 '
 ```
 
-3. 执行 `source ~/.bashrc` 使其生效。
+3. 使配置生效：
+
+```bash
+source ~/.bashrc
+```
+
 4. 之后只需在终端输入 `proxy` 即可开启代理，输入 `unproxy` 关闭。
 
 # 其它
