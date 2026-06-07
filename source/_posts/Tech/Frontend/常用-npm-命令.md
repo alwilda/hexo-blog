@@ -9,7 +9,7 @@ categories:
 查看已安装的全局包及版本号：
 
 ```bash
-npm -g --depth=0
+npm list -g --depth=0
 ```
 
 ```bash
