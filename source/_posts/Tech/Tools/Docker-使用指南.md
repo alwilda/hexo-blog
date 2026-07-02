@@ -86,7 +86,7 @@ sudo docker run hello-world
 sudo usermod -aG docker $USER
 ```
 
-注意：激活该配置需要注销并重新登录系统，或者运行 newgrp docker 来立即生效。
+注意：激活该配置需要注销并重新登录系统，或者运行 `newgrp docker` 来立即生效。
 
 2. 设置开机自启
    让 Docker 随系统启动而自动运行：
