@@ -44,55 +44,6 @@ wsl -l -v
 wsl --shutdown
 ```
 
-# 集成 Docker
-
->在 Windows 10 上将 Docker Desktop 与 WSL 2 集成是目前最推荐的开发方式。相比传统的 Hyper-V 模式，它启动更快、占用资源更少，且能在 Ubuntu 终端里直接调用 docker 命令。
->{% note no-icon 为什么启动更快，占用资源更少 %}
->- Hyper-V 模式（旧/传统模式）： Docker 会通过 Hyper-V 启动一个完整的、重型的 Linux 虚拟机（MobyLinuxVM）。这就像你在电脑里完整地启动了另一台电脑，需要加载 BIOS、初始化虚拟硬件、启动完整的内核。通常需要 30 秒甚至更久。
->
->- WSL 2 模式（新/推荐模式）： WSL 2 使用的是微软定制的轻量级实用程序虚拟机（Lightweight Utility VM）。它在后台几乎是瞬间启动的（通常在 1-2 秒内），因为它不需要模拟完整的硬件层，而是直接与 Windows 宿主机共享内核资源。
->{% endnote %}
-
-
-参考 [WSL 上的 Docker 容器入门 | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers)
-
-Docker Desktop 设置国内镜像：
-
-这里使用 [阿里云容器镜像服务](https://cr.console.aliyun.com/instances/mirrors) 作为国内镜像源。
-
-登录阿里云容器镜像服务控制台，在左侧菜单栏选择 “镜像工具” -> “镜像加速器” 即可看到专属加速器地址。
-
-如果加速地址也不好用，可以尝试使用下面的地址：
-
-```bash
-sudo tee /etc/docker/daemon.json <<-'EOF'
-{
-  "registry-mirrors": [
-    "https://2a6bf1988cb6428c877f723ec7530dbc.mirror.swr.myhuaweicloud.com",
-    "https://docker.m.daocloud.io",
-    "https://hub-mirror.c.163.com",
-    "https://mirror.baidubce.com",
-    "https://your_preferred_mirror",
-    "https://dockerhub.icu",
-    "https://docker.registry.cyou",
-    "https://docker-cf.registry.cyou",
-    "https://dockercf.jsdelivr.fyi",
-    "https://docker.jsdelivr.fyi",
-    "https://dockertest.jsdelivr.fyi",
-    "https://mirror.aliyuncs.com",
-    "https://dockerproxy.com",
-    "https://mirror.baidubce.com",
-    "https://docker.m.daocloud.io",
-    "https://docker.nju.edu.cn",
-    "https://docker.mirrors.sjtug.sjtu.edu.cn",
-    "https://docker.mirrors.ustc.edu.cn",
-    "https://mirror.iscas.ac.cn",
-    "https://docker.rainbond.cc"
-  ]
-}
-EOF
-```
-
 # 文件管理
 
 {% tabs apt %}
