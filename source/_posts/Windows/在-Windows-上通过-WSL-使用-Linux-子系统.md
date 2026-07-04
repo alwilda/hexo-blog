@@ -137,7 +137,7 @@ sudo fstrim -av
 
 它的作用是告诉底层的存储设备（如 SSD 固态硬盘或 WSL 2 的虚拟硬盘）：“这些文件我已经删除了，你可以把它们占用的物理空间真正擦除并回收了。”
 
-在进行压缩前，必须彻底关闭 WSL。打开 Windows PowerShell（管理员身份），运行：
+在进行压缩前，必须彻底关闭 WSL，打开 Windows PowerShell 运行：
 
 ```powershell
 wsl --shutdown
