@@ -14,6 +14,14 @@ categories:
 
 <!-- more -->
 
+{% note info%}
+在 WSL 2 架构下，Ubuntu 并不是以文件夹的形式直接散落在 Windows 磁盘中，而是被封装在一个虚拟磁盘文件（.vhdx）里。默认情况下，Ubuntu 的虚拟磁盘文件位于 Windows 用户目录下：
+```
+ C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu...[一串随机字符]\LocalState\ext4.vhdx
+ ```
+ ext4.vhdx 这个文件就是整个 Ubuntu 的“硬盘”，所有的 Linux 文件、安装的软件、数据库数据都存在这个大文件里。
+{% endnote %}
+
 # 安装 Linux
 
 默认情况下，已安装的 Linux 发行版将为 Ubuntu。 可以通过使用 `-d` 标志来更改这一点。
@@ -50,9 +58,7 @@ wsl --shutdown
 <!-- tab 从资源管理器访问-->
 在搜索或地址栏输入 `\\wsl$` 并打开，即可看到所有已安装的 Linux 发行版（如 Ubuntu），双击进入即可通过拖拽、复制、粘贴来传输文件。
 
-{% note info %}
 在 WSL 终端中输入 `explorer.exe .`（注意后面有个点），可以直接在当前 Linux 路径下打开 Windows 文件夹窗口。
-{% endnote %}
 <!-- endtab -->
 
 <!-- tab 使用 VS Code-->
@@ -119,12 +125,34 @@ source ~/.bashrc
 
 4. 之后只需在终端输入 `proxy` 即可开启代理，输入 `unproxy` 关闭。
 
-# 其它
+# 释放系统空间
 
-在 WSL 2 架构下，Ubuntu 并不是以文件夹的形式直接散落在 Windows 磁盘中，而是被封装在一个虚拟磁盘文件（.vhdx）里。默认情况下，Ubuntu 的虚拟磁盘文件位于 Windows 用户目录下：
+>释放占用的空间是一个非常常见的需求，因为 WSL 2 使用的是虚拟硬盘（.vhdx 文件），它的特点是会自动变大，但删除文件后不会自动变小。
 
+在进行压缩前，必须彻底关闭 WSL。打开 Windows PowerShell（管理员身份），运行：
+
+```powershell
+wsl --shutdown
 ```
-C:\Users\用户名\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu...[一串随机字符]\LocalState\ext4.vhdx
+
+继续在管理员身份的 PowerShell 中执行以下命令（将下方的路径替换为实际的 ext4.vhdx 路径）：
+
+```powershell
+# 1. 启动 diskpart 工具
+diskpart
+
+# 2. 选择 WSL 虚拟硬盘文件（路径要加双引号）
+select vdisk file="C:\Users\YOUR_USERNAME\AppData\Local\Packages\..."
+
+# 3. 以只读模式附加（部分系统版本需要这一步）
+attach vdisk readonly
+
+# 4. 执行压缩
+compact vdisk
+
+# 5. 分离硬盘并退出
+detach vdisk
+exit
 ```
 
-`ext4.vhdx`：这个文件就是整个 Ubuntu 的“硬盘”。所有的 Linux 文件、安装的软件、数据库数据都存在这个大文件里。
+完成之后，再查看该 `.vhdx` 文件，会发现它的体积明显变小了。
