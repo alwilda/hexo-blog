@@ -192,20 +192,8 @@ docker info | grep -A 4 "Registry Mirrors"
 docker system df
 ```
 
-- 一键清理所有未使用的 Docker 资源
-  这是最省心、最彻底的命令。它会安全地清理掉所有下载失败的残留、已经停止的容器、未使用的网络以及悬空镜像：
-
-```bash
-docker system prune
-```
-
-如果想把没用到的完整镜像也一起干掉，释放最大空间，可以加上 -a（All）参数：
-
-```bash
-docker system prune -a
-```
-
-- 一键清理（慎用）： 清理所有已停止的容器、未被使用的网络和无标签的悬空镜像：
+- 一键深度清理（更安全、更干净）
+  如果不仅想删除镜像，还想把未使用的容器、网络和挂载卷一起清理掉，可以使用 Docker 自带的系统清理命令：
 
 ```bash
 docker system prune -a --volumes
