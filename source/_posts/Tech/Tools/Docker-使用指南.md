@@ -192,8 +192,12 @@ docker info | grep -A 4 "Registry Mirrors"
 docker system df
 ```
 
-- 一键深度清理（更安全、更干净）
-  如果不仅想删除镜像，还想把未使用的容器、网络和挂载卷一起清理掉，可以使用 Docker 自带的系统清理命令：
+- 删除所有未被任何容器使用的镜像：
+
+```bash
+docker image prune -a
+```
+- 一并清理未使用的容器、网络、镜像和数据卷：
 
 ```bash
 docker system prune -a --volumes
