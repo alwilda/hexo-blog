@@ -8,7 +8,7 @@ categories:
 
 环境配置：
 
-```shell
+```
 setx UV_CACHE_DIR "D:\xxx\uv\cache" /M
 setx UV_CREDENTIALS_DIR "D:\xxx\uv\credentials" /M
 setx UV_INSTALL_DIR "D:\xxx\uv\install" /M
