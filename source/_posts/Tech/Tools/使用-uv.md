@@ -1,5 +1,6 @@
 ---
 title: 使用 uv
+abbrlink: 6e66bc2c
 date: 2026-07-26 16:07:25
 tags:
 categories:
