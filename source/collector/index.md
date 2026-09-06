@@ -64,35 +64,67 @@ date: 2021-07-26 10:19:27
 
 ---
 
-# Github
+# 🚀 GitHub 项目收藏清单
 
-| 链接                                                                                                       | 备注/说明                                                                                                                                                                    |
-|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [https://github.com/h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura)                           | 用 Rust 编写的无头浏览器引擎，专为 web 抓取和 AI 代理自动化而构建                                                                                                            |
-| [https://github.com/imputnet/helium](https://github.com/imputnet/helium)                                   | 私密、快速、诚实的网络浏览器                                                                                                                                                 |
-| [https://github.com/anypost/emailmd](https://github.com/anypost/emailmd)                                   | 将 Markdown 渲染为电子邮件安全的 HTML                                                                                                                                        |
-| [https://github.com/browseros-ai/BrowserOS](https://github.com/browseros-ai/BrowserOS)                     | 仅适用于您的 AI 代理。只需单击一下即可从 Chrome 导入登录名，连接任何 MCP 代理，代理在自己的选项卡中并行运行。您可以观看直播，或像视频一样回放任何会话                        |
-| [https://github.com/citrolabs/ego-lite](https://github.com/citrolabs/ego-lite)                             | AI 代理运行浏览器自动化的最快浏览器                                                                                                                                          |
-| [https://github.com/volcengine/OpenViking](https://github.com/volcengine/OpenViking)                       | OpenViking 是面向 AI 智能体的开源上下文数据库。记忆、资源、技能统一存放在 viking:// 协议下的虚拟文件系统里，智能体用 ls、tree、find 浏览自己的上下文，不必去查一个黑盒向量库 |
-| [https://github.com/genspark-ai/genoffice](https://github.com/genspark-ai/genoffice)                       | 免费、开源的 Microsoft Office 替代品，内置 AI 代理，适用于 macOS、Windows 和 Linux 的 PDF 和 Markdown 编辑                                                                   |
-| [https://github.com/iamgio/quarkdown](https://github.com/iamgio/quarkdown)                                 | 一个基于 Markdown 的现代排版系统，旨在实现多功能性。它允许单个项目无缝编译成可打印的书籍                                                                                     |
-| [https://github.com/sbroenne/mcp-server-excel](https://github.com/sbroenne/mcp-server-excel)               | 使用 AI 自动化真正的 Microsoft Excel，Excel MCP Server 允许 Agent 通过自然语言请求控制 Excel                                                                                 |
-| [https://github.com/hahhforest/pi-textbook](https://github.com/hahhforest/pi-textbook)                     | 沿 15 个 checkpoint，从一条离线轨迹开始，亲手实现一个 Pi-style coding agent                                                                                                  |
-| [https://github.com/firecrawl/anydoc](https://github.com/firecrawl/anydoc)                                 | 可将文档（Word、PowerPoint、Excel、OpenDocument、RTF、EPUB、CSV 和 PDF）转换为干净的 GitHub 风格 Markdown                                                                    |
-| [https://github.com/vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag)                   | 使用Tree sitter 解析多语言代码库，构建其结构的知识图谱                                                                                                                       |
-| [https://github.com/Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything)       | 将任何代码库、知识库或文档转换为交互式知识图谱，您可以探索、搜索和提问                                                                                                       |
-| [https://github.com/SaladDay/pi-from-scratch](https://github.com/SaladDay/pi-from-scratch)                 | 600 行 TypeScript 写成的超级迷你版 pi                                                                                                                                        |
-| [https://microsoft.github.io/flint-chart/#/zh](https://microsoft.github.io/flint-chart/#/zh)               | Flint 是一种可视化中间语言，帮助 AI 智能体从简洁、可人工编辑的图表规范出发，稳定生成表现力强、观感出色的图表                                                                 |
-| [https://www.dgzhuya.com/](https://www.dgzhuya.com/)                                                       | PI 源码解读和二次开发实战                                                                                                                                                    |
-| [https://github.com/alexishida/Moji](https://github.com/alexishida/Moji)                                   | 一个轻量级、干净的桌面应用程序，用于打开、阅读、编辑和导出Markdown文件                                                                                                       |
-| [https://github.com/mgechev/skills-best-practices](https://github.com/mgechev/skills-best-practices)       | 为代理编写专业级别的技能，使用 LLM 对其进行验证，并维护一个精益的上下文窗口。                                                                                                |
-| [https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | 让您的编码代理了解最新的 web 最佳实践                                                                                                                                        |
-| [https://github.com/iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI)                           | 专门为 AI 代理构建，用于读取、编辑和自动化 Word、Excel 和 PowerPoint 文件。免费、开源、单一二进制文件，无需安装Office                                                        |
-| [https://github.com/nyblnet/bento](https://github.com/nyblnet/bento)                                       | PowerPoint 替代方案是一个 HTML 文件                                                                                                                                          |
-| [https://github.com/AdventDevInc/kudu](https://github.com/AdventDevInc/kudu)                               | 免费的 Windows、Mac 和 Linux 清理、扫描等                                                                                                                                    |
-| [https://github.com/TabularisDB/tabularis](https://github.com/TabularisDB/tabularis)                       | Tabularis 是一款开源的桌面 SQL 工作台，支持 PostgreSQL、MySQL/MariaDB、SQLite 以及 DuckDB、ClickHouse、Redis 和 Firestore 等 15+ 种数据库                                    |
-| [https://github.com/rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)                         | 为 Claude Code、Cursor、Codex CLI、Hermes、OpenClaw、pi、OpenCode 以及任何 MCP 客户端提供持久化记忆                                                                          |
-| [https://github.com/presenton/presenton](https://github.com/presenton/presenton)                           | 开源 AI PPT 生成和 API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)                                                                                 |
-| [https://github.com/alibaba/open-code-review](https://github.com/alibaba/open-code-review)                 | Open Code Review 是一款 AI 驱动的代码审查 CLI 工具                                                                                                                           |
-| [https://github.com/tt-a1i/archify](https://github.com/tt-a1i/archify)                                     | 把代码仓库或系统描述变成漂亮、可靠、可交互的系统地图                                                                                                                         |
-| [https://github.com/nduckmink/arkon](https://github.com/nduckmink/arkon)                                   | Arkon 是一个自托管的企业级知识管理层                                                                                                                                         |
+## 🤖 AI Agent & 自动化 (AI Agents & Automation)
+
+*专注于 AI 智能体、浏览器自动化及代理记忆系统。*
+
+| 项目名称                  | 简介                                                                                | 链接                                                     |
+|:--------------------------|:------------------------------------------------------------------------------------|:---------------------------------------------------------|
+| **BrowserOS**             | 专为 AI 代理设计的浏览器，支持从 Chrome 导入登录名并并行运行多个会话。              | [Link](https://github.com/browseros-ai/BrowserOS)        |
+| **ego-lite**              | 为 AI 代理运行浏览器自动化而设计的最快浏览器。                                      | [Link](https://github.com/citrolabs/ego-lite)            |
+| **obscura**               | 用 Rust 编写的无头浏览器引擎，专为 Web 抓取和 AI 代理自动化构建。                   | [Link](https://github.com/h4ckf0r0day/obscura)           |
+| **agentmemory**           | 为 Claude Code, Cursor, pi 等多种 MCP 客户端提供持久化记忆。                        | [Link](https://github.com/rohitg00/agentmemory)          |
+| **OpenViking**            | 面向 AI 智能体的开源上下文数据库，使用虚拟文件系统管理记忆和技能。                  | [Link](https://github.com/volcengine/OpenViking)         |
+| **mcp-server-excel**      | 使用 AI 自动化真正的 Microsoft Excel，允许 Agent 通过自然语言控制。                 | [Link](https://github.com/sbroenne/mcp-server-excel)     |
+| **OfficeCLI**             | 专门为 AI 代理构建，用于读取、编辑和自动化 Word/Excel/PPT 文件（无需安装 Office）。 | [Link](https://github.com/iOfficeAI/OfficeCLI)           |
+| **skills-best-practices** | 为代理编写专业级别的技能，并使用 LLM 进行验证和上下文窗口维护。                     | [Link](https://github.com/mgechev/skills-best-practices) |
+
+## 🧠 知识图谱与 RAG (Knowledge Graph & RAG)
+
+*专注于代码库分析、文档结构化及交互式知识探索。*
+
+| 项目名称                | 简介                                                             | 链接                                                     |
+|:------------------------|:-----------------------------------------------------------------|:---------------------------------------------------------|
+| **Understand-Anything** | 将任何代码库、知识库或文档转换为交互式知识图谱，支持搜索和提问。 | [Link](https://github.com/Egonex-AI/Understand-Anything) |
+| **code-graph-rag**      | 使用 Tree sitter 解析多语言代码库，构建其结构的知识图谱。        | [Link](https://github.com/vitali87/code-graph-rag)       |
+| **archify**             | 把代码仓库或系统描述变成漂亮、可靠、可交互的系统地图。           | [Link](https://github.com/tt-a1i/archify)                |
+| **arkon**               | 自托管的企业级知识管理层。                                       | [Link](https://github.com/nduckmink/arkon)               |
+
+## 📝 生产力与文档工具 (Productivity & Docs)
+
+*涵盖 Markdown 编辑、Office 替代方案及多媒体转换。*
+
+| 项目名称      | 简介                                                                          | 链接                                             |
+|:--------------|:------------------------------------------------------------------------------|:-------------------------------------------------|
+| **genoffice** | 免费开源的 Microsoft Office 替代品，内置 AI 代理，支持 PDF 和 Markdown 编辑。 | [Link](https://github.com/genspark-ai/genoffice) |
+| **presenton** | 开源 AI PPT 生成工具（Gamma, Canva 等的替代方案）。                           | [Link](https://github.com/presenton/presenton)   |
+| **bento**     | 基于 HTML 文件的 PowerPoint 替代方案。                                        | [Link](https://github.com/nyblnet/bento)         |
+| **anydoc**    | 将各类文档（Word, PDF, Excel 等）转换为干净的 GitHub 风格 Markdown。          | [Link](https://github.com/firecrawl/anydoc)      |
+| **Moji**      | 轻量级、干净的桌面应用程序，用于打开、阅读、编辑和导出 Markdown 文件。        | [Link](https://github.com/alexishida/Moji)       |
+| **quarkdown** | 基于 Markdown 的现代排版系统，支持无缝编译成可打印的书籍。                    | [Link](https://github.com/iamgio/quarkdown)      |
+| **emailmd**   | 将 Markdown 渲染为电子邮件安全的 HTML。                                       | [Link](https://github.com/anypost/emailmd)       |
+
+## 💻 开发工具与学习资源 (Dev Tools & Learning)
+
+*包含代码审查、可视化语言及 AI 项目实战教程。*
+
+| 项目名称                | 简介                                                                      | 链接                                                        |
+|:------------------------|:--------------------------------------------------------------------------|:------------------------------------------------------------|
+| **dgzhuya.com**         | PI 源码解读和二次开发实战（网页）。                                       | [Link](https://www.dgzhuya.com/)                            |
+| **pi-textbook**         | 沿 15 个 checkpoint，从离线轨迹开始，亲手实现一个 Pi-style coding agent。 | [Link](https://github.com/hahhforest/pi-textbook)           |
+| **pi-from-scratch**     | 600 行 TypeScript 写成的超级迷你版 pi。                                   | [Link](https://github.com/SaladDay/pi-from-scratch)         |
+| **open-code-review**    | AI 驱动的代码审查 CLI 工具。                                              | [Link](https://github.com/alibaba/open-code-review)         |
+| **modern-web-guidance** | 让您的编码代理了解最新的 Web 最佳实践。                                   | [Link](https://github.com/GoogleChrome/modern-web-guidance) |
+| **flint-chart**         | 可视化中间语言，帮助 AI 智能体从图表规范出发生成高质量图表。              | [Link](https://microsoft.github.io/flint-chart/#/zh)        |
+
+## 🛠 通用工具 (General Utilities)
+
+*基础软件、数据库管理及系统维护。*
+
+| 项目名称      | 简介                                                                          | 链接                                             |
+|:--------------|:------------------------------------------------------------------------------|:-------------------------------------------------|
+| **tabularis** | 开源桌面 SQL 工作台，支持 PostgreSQL, MySQL, SQLite, DuckDB 等 15+ 种数据库。 | [Link](https://github.com/TabularisDB/tabularis) |
+| **helium**    | 私密、快速、诚实的网络浏览器。                                                | [Link](https://github.com/imputnet/helium)       |
+| **kudu**      | 免费的 Windows, Mac 和 Linux 系统清理与扫描工具。                             | [Link](https://github.com/AdventDevInc/kudu)     |
