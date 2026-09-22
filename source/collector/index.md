@@ -11,6 +11,9 @@ date: 2021-07-26 10:19:27
 
 # ✨ UI libraries
 
+- [CodeImage](https://github.com/riccardoperra/codeimage/ "一个美化代码截图的工具，使用 SolidJS 和 Fastify 构建。")
+- [Excalidraw](https://github.com/excalidraw/excalidraw/ "用于绘制手绘图表的虚拟白板。")
+
 ## ICON
 
 > Icon <br> Colorful and diverse icons
@@ -25,8 +28,11 @@ date: 2021-07-26 10:19:27
 
 - [Semantic UI React](https://react.semantic-ui.com/ "The official Semantic-UI-React integration")
 - [React Suite](https://rsuitejs.com/zh/ "一套 React 的 UI 组件库，贴心的 UI 设计，友好的开发体验。")
-- [Fluent UI](https://developer.microsoft.com/zh-CN/fluentui "From Microsoft. A collection of UX frameworks for creating beautiful, cross-platform apps that share code, design, and interaction behavior.")
+- [Fluent UI](https://developer.microsoft.com/zh-CN/fluentui/ "From Microsoft. A collection of UX frameworks for creating beautiful, cross-platform apps that share code, design, and interaction behavior.")
 - [React Rainbow](https://react-rainbow.io/ "React Rainbow is a collection of components that will reliably help you build your application in a snap.")
+- [Sugar High](https://github.com/huozhi/sugar-high/ "轻量级语法高亮显示 for JavaScript")
+- [React Bits](https://github.com/DavidHDev/react-bits/ "开源的动画、交互式和完全可定制的 React 组件集合")
+- [mapcn](https://github.com/AnmolSaini16/mapcn "React 的免费开源、即用型、可定制的地图组件")
 
 ### ☕ Java
 
@@ -66,6 +72,11 @@ date: 2021-07-26 10:19:27
 
 # 🚀 GitHub
 
+## 💎 构建大模型
+
+[Happy-LLM](https://github.com/datawhalechina/happy-llm/ "📚 从零开始构建大模型")
+[MiniMind](https://github.com/jingyaogong/minimind/ "🧠 在短短 2 小时内从头开始训练 64M 参数 LLM！")
+
 ## 🤖 AI Agent & 自动化 (AI Agents & Automation)
 
 *专注于 AI 智能体、浏览器自动化及代理记忆系统。*
@@ -79,6 +90,7 @@ date: 2021-07-26 10:19:27
 | **OpenViking**            | 面向 AI 智能体的开源上下文数据库，使用虚拟文件系统管理记忆和技能。                  | [Link](https://github.com/volcengine/OpenViking)         |
 | **agentmemory**           | 为 Claude Code, Cursor, pi 等多种 MCP 客户端提供持久化记忆。                        | [Link](https://github.com/rohitg00/agentmemory)          |
 | **mnemosyne**             | 适用于任何代理框架的 AI memory，一个 pip 安装，使用 SQLite 数据库。不需要外部服务。 | [Link](https://github.com/mnemosyne-oss/mnemosyne)       |
+| **SkillOpt**              | Agent Skills 的自我进化执行策略。                                                   | [Link](https://github.com/microsoft/SkillOpt)            |
 
 ## 🧠 知识图谱与 RAG (Knowledge Graph & RAG)
 
